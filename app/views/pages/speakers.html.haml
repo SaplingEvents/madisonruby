@@ -1,44 +1,29 @@
-!!! 5
-%html(lang="en-US")
-  %head
-    %title Madison Ruby
-    %meta(charset="UTF-8")
-    /[if lt IE 9]
-      = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
-    = stylesheet_link_tag "application"
-    = yield :head
-  %body
-    %header
-      %section
-        %h1= link_to "Madison Ruby", "#"
-        %nav
-          %ul
-            - ["Home", "Speakers", "Sponsors", "Venue", "Travel"].each do |i|
-              %li= link_to i, "#"
-            %li.register= link_to "Register", "#"
-        %p
-          %mark(data-after_content="$") August 18-20, 2011
-          Madison, WI
-    #content
-      %section#speakers
-        %h1 Our Speakers
-        - 4.times do
-          %article
-            %figure
-              = image_tag "img_speaker.jpg", alt: "Rojelio Samour"
-            .bio
-              %hgroup
-                %h1 Rogelio Samour
-                %h2 Talk Title Here
-              %p Born in El Salvador, Rogelio started tinkering with computers when his dad gave him a Tandy in the early Eighties. He received a degree from Arkansas Tech University in 2003 and is passionate about using Computer Science to solve complex problems. Things Ro thinks are rad: Vim, Ruby, Rails, Linux, Open Source, Quantum Leap, Murdock from “The A-Team,” basketball, “MacGyver,” “Seinfeld,” “Monk,” chess, and long walks on the beach (with his wife). He likes Middle Eastern cuisine and dislikes talking about himself in the third person.
-            %aside
-              %dl
-                %dt.company Company:
-                %dd= link_to "Hashrocket", "#"
-                %dt.twitter Twitter:
-                %dd= link_to "@therubymug", "#"
-                %dt.website Website:
-                %dd= link_to "www.rojelio.com", "#"
+%section#speakers
+  %h1 Our Speakers
+  %article
+    %a{ :name => 'jeff_casimir' }
+    %figure
+      = image_tag "img_jeff_casimir.jpg", alt: "Jeff Casimir"
+    .bio
+      %hgroup
+        %h1 Jeff Casimir
+        %p Jeff runs Jumpstart Lab where he teaches the best Ruby and Rails classes on Earth.  He formerly taught public middle school and high school in his hometown of Washington, DC.  Now he turns "normal people" into developers, and helps existing developers up their skills.  He has not, yet, figured out how to convert developers into normal people.
+        -# %h1 Blow Up Your Views
+        -# %p Whether you're new to Rails or have been around few years, chances are that your views are primitive. Detonate what you know about how views are written and let's start over.
 
-    %footer
-      %p!= "Copyright &copy; 2011 Madison Ruby Conference"
+        -# %p In this session you'll learn...
+        -# %ul
+          -# %li Why your views suck
+          -# %li Guidelines for view code quality
+          -# %li Shake PHP-itis and work with Objects
+          -# %li Embrace Rails 3's flexibilities
+          -# %li Stop being a weenie and embrace JavaScript
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Jumpstart Lab", "http://jumpstartlab.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@j3", "http://twitter.com/j3"
+        %dt.website Website:
+        %dd= link_to "http://jumpstartlab.com", "http://jumpstartlab.com"
