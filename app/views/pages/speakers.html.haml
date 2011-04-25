@@ -1,0 +1,44 @@
+!!! 5
+%html(lang="en-US")
+  %head
+    %title Madison Ruby
+    %meta(charset="UTF-8")
+    /[if lt IE 9]
+      = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
+    = stylesheet_link_tag "application"
+    = yield :head
+  %body
+    %header
+      %section
+        %h1= link_to "Madison Ruby", "#"
+        %nav
+          %ul
+            - ["Home", "Speakers", "Sponsors", "Venue", "Travel"].each do |i|
+              %li= link_to i, "#"
+            %li.register= link_to "Register", "#"
+        %p
+          %mark(data-after_content="$") August 18-20, 2011
+          Madison, WI
+    #content
+      %section#speakers
+        %h1 Our Speakers
+        - 4.times do
+          %article
+            %figure
+              = image_tag "img_speaker.jpg", alt: "Rojelio Samour"
+            .bio
+              %hgroup
+                %h1 Rogelio Samour
+                %h2 Talk Title Here
+              %p Born in El Salvador, Rogelio started tinkering with computers when his dad gave him a Tandy in the early Eighties. He received a degree from Arkansas Tech University in 2003 and is passionate about using Computer Science to solve complex problems. Things Ro thinks are rad: Vim, Ruby, Rails, Linux, Open Source, Quantum Leap, Murdock from “The A-Team,” basketball, “MacGyver,” “Seinfeld,” “Monk,” chess, and long walks on the beach (with his wife). He likes Middle Eastern cuisine and dislikes talking about himself in the third person.
+            %aside
+              %dl
+                %dt.company Company:
+                %dd= link_to "Hashrocket", "#"
+                %dt.twitter Twitter:
+                %dd= link_to "@therubymug", "#"
+                %dt.website Website:
+                %dd= link_to "www.rojelio.com", "#"
+
+    %footer
+      %p!= "Copyright &copy; 2011 Madison Ruby Conference"

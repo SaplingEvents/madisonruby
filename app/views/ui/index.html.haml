@@ -1,0 +1,5 @@
+%ul
+  - Dir.glob('app/views/ui/*.html.haml').sort.each do |f|
+    - wireframe = File.basename(f, '.html.haml')
+    - unless wireframe == "index"
+      %li= link_to wireframe.titleize, action: wireframe

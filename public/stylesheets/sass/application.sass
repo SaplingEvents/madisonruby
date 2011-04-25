@@ -1,0 +1,284 @@
+@import "mixins"
+
+body
+  font: normal 13px Arial, Helvetica, sans-serif
+  color: #4b4b4b
+
+a
+  color: #1d6cd7
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  &.more
+    font-size: 12px
+    font-weight: bold
+h1
+  font-size: 24px
+  font-weight: normal
+  color: #a60e13
+
+.site_column
+  width: 960px
+  margin: 0 auto
+
+body
+  > header
+    position: relative
+    z-index: 2
+    height: 37px
+    margin: 0 0 58px 0
+    background: #000000
+    section
+      @extend .site_column
+      position: relative
+    h1
+      position: absolute
+      left: 37px
+      top: 0
+      z-index: 1
+      a
+        display: block
+        width: 116px
+        height: 147px
+        text-indent: -8685px
+        overflow: hidden
+        background: transparent url("/images/logo.png") 0 0 no-repeat
+    nav
+      padding: 8px 0 0 222px
+      li
+        float: left
+        margin: 0 20px 0 0
+        font-size: 14px
+        text-transform: uppercase
+        a
+          display: block
+          padding: 3px 20px
+          color: #ffffff
+          &:hover
+            text-decoration: none
+        &.register
+          margin: 0
+          a
+            background: #ffbf42
+    p
+      position: absolute
+      right: 0
+      top: 57px
+      z-index: 1
+      font-size: 18px
+      color: #000000
+      mark
+        padding: 0 8px 0 0
+        color: #a70e13
+        &:after
+          padding: 0 0 0 8px
+          content: "•"
+          color: #b39d78
+  > footer
+    padding: 12px 0
+    background: #000000
+    p
+      font-size: 12px
+      text-align: center
+      color: #ffffff
+
+#masthead
+  position: relative
+  z-index: 1
+  width: 958px
+  height: 171px
+  padding: 44px 0 0 0
+  margin: 0 auto 30px auto
+  border: 1px solid #544e49
+  +box-shadow(0 0 3px #222222)
+  background: transparent url("/images/img_masthead.jpg") 0 0 no-repeat
+  .register
+    float: right
+    width: 330px
+    padding: 15px 60px 25px 60px
+    +border-top-left-radius(6px)
+    +border-bottom-left-radius(6px)
+    +box-shadow(-1px -1px 5px rgba(0, 0, 0, .5))
+    background: transparent url("/images/bg_register.png") repeat
+    h1
+      width: 1px
+      height: 1px
+      text-indent: -8685px
+    p
+      padding: 0 0 10px 0
+      font-size: 26px
+      &.price
+        display: inline
+        font-size: 18px
+        color: #63686b
+    a
+      padding: 5px 20px
+      margin: 0 15px 0 0
+      font-size: 14px
+      font-weight: bold
+      color: #464646
+      +border-radius(4px)
+      +box-shadow(0 0 5px rgba(0, 0, 0, .5))
+      +gradient-bg(#ffffff, #f4f4f4)
+      &:hover
+        text-decoration: none
+      span
+        padding: 0 25px 0 0
+        background: transparent url("/images/icon_rarr.png") 100% 0 no-repeat
+
+#content
+  @extend .site_column
+  header + &
+    margin-top: 140px
+
+#intro
+  overflow: hidden
+  padding: 0 0 0 10px
+  margin: 0 0 30px 0
+  border-bottom: 2px solid #e8e3db
+  article
+    float: left
+    width: 300px
+    padding: 0 20px 20px 0
+    p
+      padding: 5px 0
+      font-size: 18px
+      line-height: 150%
+    &.speakers
+      width: 630px
+      padding-right: 0
+      header
+        padding: 0 0 15px 0
+        h1
+          display: inline
+          padding: 0 20px 0 0
+      li
+        float: left
+        position: relative
+        img
+          display: block
+          width: 126px
+          height: 172px
+        small
+          position: absolute
+          left: 5px
+          top: 0
+          z-index: 1
+          width: 23px
+          height: 37px
+          text-indent: -8685px
+          background: transparent url("/images/icon_keynote.png") 0 0 no-repeat
+
+#workshops
+  float: left
+  width: 640px
+  padding: 0 0 0 10px
+  h1
+    padding: 0 0 15px 0
+  > p
+    padding: 0 20px 25px 0
+    font-size: 14px
+    line-height: 140%
+  article
+    float: left
+    width: 300px
+    padding: 0 20px 20px 0
+    img
+      display: block
+      padding: 5px
+      margin: 0 0 20px 0
+      border: 1px solid #bcbcbc
+      background: #cbe4f1
+    h1
+      font-size: 16px
+      font-weight: bold
+    p
+      line-height: 150%
+
+#sidebar
+  overflow: hidden
+  article
+    padding: 0 0 20px 0
+    h1
+      padding: 0 0 10px 0
+    p
+      padding: 0 0 15px 0
+      font-size: 14px
+      line-height: 150%
+    li
+      padding: 0 0 10px 0
+      margin: 0 0 15px 0
+      border-bottom: 1px solid #dedad4
+      p
+        padding: 0 0 5px 0
+        &.meta
+          font-size: 11px
+          color: #9a9a9a
+      &.last
+        border: none
+
+#sponsors
+  clear: both
+  padding: 15px 0 0 0
+  border-top: 2px solid #e8e3db
+  h1
+    padding: 0 0 25px 0
+    font-size: 16px
+    color: #464646
+  ul
+    margin: 0 0 20px -40px
+    text-align: center
+    li
+      display: inline
+      padding: 0 0 0 40px
+      img
+        vertical-align: middle
+
+#speakers
+  h1
+    padding: 0 0 15px 0
+  article
+    clear: both
+    overflow: hidden
+    padding: 0 0 20px 0
+    margin: 0 0 30px 0
+    font-size: 14px
+    border-bottom: 2px solid #e8e3db
+    .bio
+      float: left
+      width: 520px
+    figure
+      float: left
+      padding: 0 30px 0 0
+    hgroup
+      padding: 0 0 20px 0
+    h1
+      padding: 0 0 3px 0
+      font-size: inherit
+      font-weight: bold
+      color: #464646
+    h2
+      font-weight: normal
+    p
+      padding: 0 0 20px 0
+      line-height: 150%
+    aside
+      float: right
+      width: 180px
+      padding: 30px
+      font-size: 13px
+      background: #f2f1f1
+      dt
+        padding: 2px 0 10px 24px
+        &.company
+          background: transparent url("/images/icon_company.png") 0 0 no-repeat
+        &.twitter
+          background: transparent url("/images/icon_twitter.png") 0 0 no-repeat
+        &.website
+          background: transparent url("/images/icon_website.png") 0 0 no-repeat
+      dd
+        padding: 0 0 20px 24px
+        font-size: 12px
+        font-weight: bold
+.twtr-hd
+  display: none
