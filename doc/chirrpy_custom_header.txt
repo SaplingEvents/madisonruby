@@ -74,7 +74,7 @@ header#top {
       height: 147px;
       text-indent: -8685px;
       overflow: hidden;
-      background: transparent url("http://localhost:3000/images/logo.png") 0 0 no-repeat; }
+      background: transparent url("http://madisonruby.org/images/logo.png") 0 0 no-repeat; }
   header#top nav {
     padding: 8px 0 0 222px; }
     header#top nav li {
@@ -125,7 +125,7 @@ footer#bottom {
   -webkit-box-shadow: 0 0 3px #222222;
   -moz-box-shadow: 0 0 3px #222222;
   box-shadow: 0 0 3px #222222;
-  background: transparent url("http://localhost:3000/images/img_masthead.jpg") 0 0 no-repeat; }
+  background: transparent url("http://madisonruby.org/images/img_masthead.jpg") 0 0 no-repeat; }
   #masthead .register {
     float: right;
     width: 330px;
@@ -137,7 +137,7 @@ footer#bottom {
     -webkit-box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
     box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
-    background: transparent url("http://localhost:3000/images/bg_register.png") repeat; }
+    background: transparent url("http://madisonruby.org/images/bg_register.png") repeat; }
     #masthead .register h1 {
       width: 1px;
       height: 1px;
@@ -168,7 +168,7 @@ footer#bottom {
         text-decoration: none; }
       #masthead .register a span {
         padding: 0 25px 0 0;
-        background: transparent url("http://localhost:3000/images/icon_rarr.png") 100% 0 no-repeat; }
+        background: transparent url("http://madisonruby.org/images/icon_rarr.png") 100% 0 no-repeat; }
 
 header + #content {
   margin-top: 140px; }
@@ -209,7 +209,7 @@ header + #content {
           width: 23px;
           height: 37px;
           text-indent: -8685px;
-          background: transparent url("http://localhost:3000/images/icon_keynote.png") 0 0 no-repeat; }
+          background: transparent url("http://madisonruby.org/images/icon_keynote.png") 0 0 no-repeat; }
 
 #workshops {
   float: left;
@@ -312,11 +312,11 @@ header + #content {
     #speakers article aside dt {
       padding: 2px 0 10px 24px; }
       #speakers article aside dt.company {
-        background: transparent url("http://localhost:3000/images/icon_company.png") 0 0 no-repeat; }
+        background: transparent url("http://madisonruby.org/images/icon_company.png") 0 0 no-repeat; }
       #speakers article aside dt.twitter {
-        background: transparent url("http://localhost:3000/images/icon_twitter.png") 0 0 no-repeat; }
+        background: transparent url("http://madisonruby.org/images/icon_twitter.png") 0 0 no-repeat; }
       #speakers article aside dt.website {
-        background: transparent url("http://localhost:3000/images/icon_website.png") 0 0 no-repeat; }
+        background: transparent url("http://madisonruby.org/images/icon_website.png") 0 0 no-repeat; }
     #speakers article aside dd {
       padding: 0 0 20px 24px;
       font-size: 12px;
