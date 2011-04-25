@@ -1,0 +1,10 @@
+      <section id='sponsors'>
+        <h1>Sponsors</h1>
+        <ul>
+          <li><a href="http://www.gettyimages.com" target="_blank"><img alt="Getty Images" src="http://www.gettyimages.com/Images/GlobalNav/logo-GettyImages.png" /></a></li>
+        </ul>
+      </section>
+    <footer id='bottom'>
+      <p>Copyright &copy; 2011 Madison Ruby Conference</p>
+    </footer>
+

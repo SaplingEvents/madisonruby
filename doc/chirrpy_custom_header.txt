@@ -1,0 +1,353 @@
+<style type="text/css">
+@charset "UTF-8";
+/*
+----------------------------------------
+Whitepsace Reset
+    Authors:  Tantek Celik, Shane Riley
+    Version:  (CC) 2011 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:  Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+#event_show header { display:none; }
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd, figure {
+  margin: 0;
+  padding: 0; }
+
+a img, :link img, :visited img, fieldset {
+  border: none; }
+
+address {
+  font-style: normal; }
+
+header, section, article, nav, footer, hgroup {
+  display: block; }
+
+mark {
+  background: transparent; }
+
+body {
+  font: normal 13px Arial, Helvetica, sans-serif;
+  color: #4b4b4b; 
+  background-color: #fff;
+}
+
+a {
+  color: #1d6cd7;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a.more {
+    font-size: 12px;
+    font-weight: bold; }
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #a60e13; }
+
+.site_column, header#top section, #content {
+  width: 960px;
+  margin: 0 auto; }
+
+header#top {
+  position: relative;
+  z-index: 2;
+  height: 37px;
+  margin: 0 0 58px 0;
+  background: black; }
+  header#top section {
+    position: relative; }
+  header#top h1 {
+    position: absolute;
+    left: 37px;
+    top: 0;
+    z-index: 1; }
+    header#top h1 a {
+      display: block;
+      width: 116px;
+      height: 147px;
+      text-indent: -8685px;
+      overflow: hidden;
+      background: transparent url("http://localhost:3000/images/logo.png") 0 0 no-repeat; }
+  header#top nav {
+    padding: 8px 0 0 222px; }
+    header#top nav li {
+      float: left;
+      margin: 0 20px 0 0;
+      font-size: 14px;
+      text-transform: uppercase; }
+      header#top nav li a {
+        display: block;
+        padding: 3px 20px;
+        color: white; }
+        header#top nav li a:hover {
+          text-decoration: none; }
+      header#top nav li.register {
+        margin: 0; }
+        header#top nav li.register a {
+          background: #ffbf42; }
+  header#top p {
+    position: absolute;
+    right: 0;
+    top: 57px;
+    z-index: 1;
+    font-size: 18px;
+    color: black; }
+    header#top p mark {
+      padding: 0 8px 0 0;
+      color: #a70e13; }
+      header#top p mark:after {
+        padding: 0 0 0 8px;
+        content: "•";
+        color: #b39d78; }
+footer#bottom {
+  padding: 12px 0;
+  background: black; }
+  footer#bottom p {
+    font-size: 12px;
+    text-align: center;
+    color: white; }
+
+#masthead {
+  position: relative;
+  z-index: 1;
+  width: 958px;
+  height: 171px;
+  padding: 44px 0 0 0;
+  margin: 0 auto 30px auto;
+  border: 1px solid #544e49;
+  -webkit-box-shadow: 0 0 3px #222222;
+  -moz-box-shadow: 0 0 3px #222222;
+  box-shadow: 0 0 3px #222222;
+  background: transparent url("http://localhost:3000/images/img_masthead.jpg") 0 0 no-repeat; }
+  #masthead .register {
+    float: right;
+    width: 330px;
+    padding: 15px 60px 25px 60px;
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+    background: transparent url("http://localhost:3000/images/bg_register.png") repeat; }
+    #masthead .register h1 {
+      width: 1px;
+      height: 1px;
+      text-indent: -8685px; }
+    #masthead .register p {
+      padding: 0 0 10px 0;
+      font-size: 26px; }
+      #masthead .register p.price {
+        display: inline;
+        font-size: 18px;
+        color: #63686b; }
+    #masthead .register a {
+      padding: 5px 20px;
+      margin: 0 15px 0 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: #464646;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      background-color: #f4f4f4;
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=white, endColorstr=#f4f4f4);
+      background-image: -moz-linear-gradient(100% 100% 90deg, #f4f4f4, white);
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#f4f4f4)); }
+      #masthead .register a:hover {
+        text-decoration: none; }
+      #masthead .register a span {
+        padding: 0 25px 0 0;
+        background: transparent url("http://localhost:3000/images/icon_rarr.png") 100% 0 no-repeat; }
+
+header + #content {
+  margin-top: 140px; }
+
+#intro {
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  margin: 0 0 30px 0;
+  border-bottom: 2px solid #e8e3db; }
+  #intro article {
+    float: left;
+    width: 300px;
+    padding: 0 20px 20px 0; }
+    #intro article p {
+      padding: 5px 0;
+      font-size: 18px;
+      line-height: 150%; }
+    #intro article.speakers {
+      width: 630px;
+      padding-right: 0; }
+      #intro article.speakers header {
+        padding: 0 0 15px 0; }
+        #intro article.speakers header h1 {
+          display: inline;
+          padding: 0 20px 0 0; }
+      #intro article.speakers li {
+        float: left;
+        position: relative; }
+        #intro article.speakers li img {
+          display: block;
+          width: 126px;
+          height: 172px; }
+        #intro article.speakers li small {
+          position: absolute;
+          left: 5px;
+          top: 0;
+          z-index: 1;
+          width: 23px;
+          height: 37px;
+          text-indent: -8685px;
+          background: transparent url("http://localhost:3000/images/icon_keynote.png") 0 0 no-repeat; }
+
+#workshops {
+  float: left;
+  width: 640px;
+  padding: 0 0 0 10px; }
+  #workshops h1 {
+    padding: 0 0 15px 0; }
+  #workshops > p {
+    padding: 0 20px 25px 0;
+    font-size: 14px;
+    line-height: 140%; }
+  #workshops article {
+    float: left;
+    width: 300px;
+    padding: 0 20px 20px 0; }
+    #workshops article img {
+      display: block;
+      padding: 5px;
+      margin: 0 0 20px 0;
+      border: 1px solid #bcbcbc;
+      background: #cbe4f1; }
+    #workshops article h1 {
+      font-size: 16px;
+      font-weight: bold; }
+    #workshops article p {
+      line-height: 150%; }
+
+#sidebar {
+  overflow: hidden; }
+  #sidebar article {
+    padding: 0 0 20px 0; }
+    #sidebar article h1 {
+      padding: 0 0 10px 0; }
+    #sidebar article p {
+      padding: 0 0 15px 0;
+      font-size: 14px;
+      line-height: 150%; }
+    #sidebar article li {
+      padding: 0 0 10px 0;
+      margin: 0 0 15px 0;
+      border-bottom: 1px solid #dedad4; }
+      #sidebar article li p {
+        padding: 0 0 5px 0; }
+        #sidebar article li p.meta {
+          font-size: 11px;
+          color: #9a9a9a; }
+      #sidebar article li.last {
+        border: none; }
+
+#sponsors {
+  clear: both;
+  padding: 15px 0 0 0;
+  border-top: 2px solid #e8e3db; }
+  #sponsors h1 {
+    padding: 0 0 25px 0;
+    font-size: 16px;
+    color: #464646; }
+  #sponsors ul {
+    margin: 0 0 20px -40px;
+    text-align: center; }
+    #sponsors ul li {
+      display: inline;
+      padding: 0 0 0 40px; }
+      #sponsors ul li img {
+        vertical-align: middle; }
+
+#speakers h1 {
+  padding: 0 0 15px 0; }
+#speakers article {
+  clear: both;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+  margin: 0 0 30px 0;
+  font-size: 14px;
+  border-bottom: 2px solid #e8e3db; }
+  #speakers article .bio {
+    float: left;
+    width: 520px; }
+  #speakers article figure {
+    float: left;
+    padding: 0 30px 0 0; }
+  #speakers article hgroup {
+    padding: 0 0 20px 0; }
+  #speakers article h1 {
+    padding: 0 0 3px 0;
+    font-size: inherit;
+    font-weight: bold;
+    color: #464646; }
+  #speakers article h2 {
+    font-weight: normal; }
+  #speakers article p {
+    padding: 0 0 20px 0;
+    line-height: 150%; }
+  #speakers article aside {
+    float: right;
+    width: 180px;
+    padding: 30px;
+    font-size: 13px;
+    background: #f2f1f1; }
+    #speakers article aside dt {
+      padding: 2px 0 10px 24px; }
+      #speakers article aside dt.company {
+        background: transparent url("http://localhost:3000/images/icon_company.png") 0 0 no-repeat; }
+      #speakers article aside dt.twitter {
+        background: transparent url("http://localhost:3000/images/icon_twitter.png") 0 0 no-repeat; }
+      #speakers article aside dt.website {
+        background: transparent url("http://localhost:3000/images/icon_website.png") 0 0 no-repeat; }
+    #speakers article aside dd {
+      padding: 0 0 20px 24px;
+      font-size: 12px;
+      font-weight: bold; }
+
+.twtr-hd {
+  display: none; }
+</style>
+    <header id='top'>
+      <section>
+        <h1><a href="http://madisonruby.org/">Madison Ruby</a></h1>
+        <nav>
+          <ul>
+            <li><a href="http://madisonruby.org/home" target="_blank">Home</a></li>
+            <li><a href="http://madisonruby.org/speakers" target="_blank">Speakers</a></li>
+          </ul>
+        </nav>
+        <p>
+          <mark data-after_content='$'>August 18-20, 2011</mark>
+          Madison, WI
+        </p>
+      </section>
+    </header>
+    <div id='masthead'>
+      <div class='register'>
+        <h1>Madision Ruby Conference</h1>
+        <p>
+          Discover a hidden
+          <strong>gem</strong>
+          in Madison, Wisconsin
+        </p>
+        </a>
+      </div>
+    </div>
