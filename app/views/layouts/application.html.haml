@@ -46,3 +46,14 @@
       var pageTracker = _gat._getTracker("UA-17866845-1");
       pageTracker._trackPageview();
       } catch(err) {}
+
+      var woo_settings = {idle_timeout:'300000', domain:'madisonruby.org'};
+      var woo_actions = [{type:'pageview',url:window.location.pathname+window.location.search,title:document.title}];
+      (function(){
+      var wsc = document.createElement('script');
+      wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+      wsc.type = 'text/javascript';
+      wsc.async = true;
+      var ssc = document.getElementsByTagName('script')[0];
+      ssc.parentNode.insertBefore(wsc, ssc);
+      })();
