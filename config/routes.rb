@@ -1,4 +1,9 @@
 MadisonRuby::Application.routes.draw do
+  constraints(:host => /madisonruby.com/) do
+    root :to => redirect("http://madisonruby.org")
+    match '/*path', :to => redirect {|params| "http://madisonruby.org/#{params[:path]}"}
+  end
+
   match 'home' => "pages#home", :as => "home"
   match 'speakers' => "pages#speakers", :as => "speakers"
 
