@@ -6,6 +6,7 @@ MadisonRuby::Application.routes.draw do
 
   match 'home' => "pages#home", :as => "home"
   match 'speakers' => "pages#speakers", :as => "speakers"
+  match 'sponsors' => "pages#sponsors", :as => "sponsors"
 
   unless Rails.env.production?
     match 'ui(/:action)', controller: 'ui'
