@@ -38,7 +38,9 @@
       = yield
 
     %footer
-      %p!= "Copyright &copy; 2011 Madison Ruby Conference"
+      %p
+        != "Copyright &copy; 2011 Madison Ruby Conference &mdash; "
+        = mail_to "contact@madisonruby.org"
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
