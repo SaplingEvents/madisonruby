@@ -123,4 +123,22 @@
         %dt.website Website:
         %dd= link_to "http://www.improveffect.com/", "http://www.improveffect.com/"
 
+  %article
+    %a{ :name => 'matt_yoho' }
+    %figure
+      = image_tag "img_matt_yoho.jpg", alt: "Matt Yoho"
+    .bio
+      %hgroup
+        %h1 Matt Yoho
+        %p Matt Yoho is a developer and agile enthusiast with a love for Ruby and the web who works for EdgeCase in Columbus, OH. He is a supporter of the software craftsmanship movement and is the apprenticeship coordinator at EdgeCase. He likes comic books, karaoke, free software, and sweet potato fries. He is one fairly hep cat.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "EdgeCase", "http://www.edgecase.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@mattyoho", "http://twitter.com/mattyoho"
+        %dt.website Website:
+        %dd= link_to "http://blog.mattyoho.com/", "http://blog.mattyoho.com/"
+
 = render :partial => 'sponsors'
