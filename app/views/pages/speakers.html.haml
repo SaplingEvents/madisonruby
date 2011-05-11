@@ -141,4 +141,24 @@
         %dt.website Website:
         %dd= link_to "http://blog.mattyoho.com/", "http://blog.mattyoho.com/"
 
+  %article
+    %a{ :name => 'barry_hess' }
+    %figure
+      = image_tag "img_barry_hess.jpg", alt: "Barry Hess"
+    .bio
+      %hgroup
+        %h1 Barry Hess
+        %p Barry is part of an elite team of time tracking warriors at Harvest. He spent seven years mired in enterprise before Ruby slapped him in the face like a jilted lover. Now he likes to spend his time discussing distributed teamwork, small team to not-quite-as-small team growing pains, and sweet, sweet code.
+
+        %p Barry created a blog so he would have writing credits. He has used your open source software. He lives in rural Minnesota with his wife and three daughters.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Harvest", "http://www.getharvest.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@bjhess", "http://twitter.com/bjhess"
+        %dt.website Website:
+        %dd= link_to "http://bjhess.com/", "http://bjhess.com/"
+
 = render :partial => 'sponsors'
