@@ -181,4 +181,24 @@
         %dt.twitter Twitter:
         %dd= link_to "@meghatron", "http://twitter.com/meghatron"
 
+  %article
+    %a{ :name => 'matt_margolis' }
+    %figure
+      = image_tag "img_matt_margolis.jpg", alt: "Matt Margolis"
+    .bio
+      %hgroup
+        %h1 Matt Margolis
+        %p Matt is a Software Engineer with Getty Images' Madison office where he develops enterprise scale applications and services in Ruby. He has contributed to Rails, ActiveMerchant, and several other open source projects. Matt is an active member of the Mad-Railers user group where he can be found both answering and asking questions.
+
+        %p Matt moved from Massachusetts to Wisconsin to study Computer Science and has been enjoying Wisconsin's cheeses, ice creams, and beers ever since. His passions include Vim, reading too many books at the same time, and peanut butter.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Getty Images", "http://www.gettyimages.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@mrmargolis", "http://twitter.com/mrmargolis"
+        %dt.website Website:
+        %dd= link_to "https://github.com/mrmargolis", "https://github.com/mrmargolis"
+
 = render :partial => 'sponsors'
