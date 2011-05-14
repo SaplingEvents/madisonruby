@@ -234,4 +234,23 @@
         %dd= link_to "@davetron5000", "http://twitter.com/davetron5000"
         %dt.website Website:
         %dd= link_to "naildrivin5.com", "http://www.naildrivin5.com"
+
+  %article
+    %a{ :name => 'gerred_dillon' }
+    %figure
+      = image_tag "img_gerred_dillon.png", alt: "Gerred Dillon"
+    .bio
+      %hgroup
+        %h1 Gerred Dillon
+        %p Gerred is the VP of Engineering at Quick Left, a Ruby on Rails consulting firm based in Boulder, CO., where he focuses on training, concurrency, and scalability. Mostly, however, Gerred spends his time writing clean code and tests. A lot of tests. A programmer at heart, Gerred is comfortable in a host of languages from Ruby and Javascript down to Erlang or C. He participates in many open source projects, and is the author of an AMQP object message mapper.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Quick Left", "http://www.quickleft.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@justicefries", "http://twitter.com/justicefries"
+        %dt.website Website:
+        %dd= link_to "gerred.com", "http://www.gerred.com"
+
 = render :partial => 'sponsors'
