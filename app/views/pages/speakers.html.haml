@@ -217,4 +217,21 @@
         %dt.website Website:
         %dd= link_to "gilesbowkett.blogspot.com", "http://gilesbowkett.blogspot.com"
 
+  %article
+    %a{ :name => 'dave_copeland' }
+    %figure
+      = image_tag "img_dave_copeland.jpg", alt: "Dave Copeland"
+    .bio
+      %hgroup
+        %h1 Dave Copeland
+        %p Dave Copeland is a veteran software developer with over 15 years of professional development experience, starting on UNIX and C, moving into Java, and now using Java, Ruby, and Scala on a daily basis for energy-efficiency startup OPOWER in Washington, DC. He lives in the command line and firmly believes in getting things done quickly, not making a mess, and leaving things better than how he found them.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "OPOWER", "http://www.opower.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@davetron5000", "http://twitter.com/davetron5000"
+        %dt.website Website:
+        %dd= link_to "naildrivin5.com", "http://www.naildrivin5.com"
 = render :partial => 'sponsors'
