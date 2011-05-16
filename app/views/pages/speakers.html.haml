@@ -253,4 +253,20 @@
         %dt.website Website:
         %dd= link_to "gerred.com", "http://www.gerred.com"
 
+  %article
+    %a{ :name => 'renee_de_voursney' }
+    %figure
+      = image_tag "img_renee_de_voursney.jpg", alt: "Renée De Voursney"
+    .bio
+      %hgroup
+        %h1 Renée De Voursney
+        %p Renée is the lead developer at Blue Box Group, a managed Rails hosting provider located in Seattle. Renée’s skills intersect software development and business process improvement. When she is not building bug-free, infinitely scalable, and perfectly crafted software, you can find her climbing mountains or jumping off cliffs in Zimbabwe.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Blue Box Group", "http://www.bluebox.net/"
+        %dt.twitter Twitter:
+        %dd= link_to "@blueboxrenee", "http://twitter.com/blueboxrenee"
+
 = render :partial => 'sponsors'
