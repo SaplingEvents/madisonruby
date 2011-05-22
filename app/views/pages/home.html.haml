@@ -1,6 +1,24 @@
 - content_for :page_title do
   Madison Ruby Conference - Aug 18-20, 2011 - Madison, WI
 
+- content_for :head do
+  :javascript
+    var is_ssl = ("https:" == document.location.protocol);
+    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+
+  :javascript
+    var feedback_widget_options = {};
+
+    feedback_widget_options.display = "overlay";
+    feedback_widget_options.company = "madisonruby";
+    feedback_widget_options.placement = "left";
+    feedback_widget_options.color = "#222";
+    feedback_widget_options.style = "idea";
+
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+
+
 %section#intro
   %article
     %p Madison Ruby Conference is a more than one track conference committed to bringing together two great communities.  The conference will showcase to locals the assets of the Ruby community and allow visitors to Madison a chance to experience one of the best, brainiest, and least expensive places in the US to live and work.
