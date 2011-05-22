@@ -1,7 +1,7 @@
 - content_for :page_title do
   Hotel and Travel Information for Madison Ruby - August 18-20, 2011
 
-%section#sponsors
+%section#travel
   %h1 Hotel &amp; Travel
   %a{ :name => 'inn_on_the_park' }
   %article
@@ -124,3 +124,29 @@
 
       = link_to_image "hyatt-capitol-view-thumb.jpg:hyatt-capitol-view-large.jpg", :title => "Hyatt Place Exterior", :class => 'fancy'
       = link_to_image "hyatt-great-room-thumb.jpg:hyatt-great-room-large.jpg", :title => "Hyatt Place Great Room", :class => 'fancy'
+
+  %a{ :name => 'madison_hostel' }
+  %article
+    %aside
+      %dl
+        %dt.company Address:
+
+        %dd= link_to "141 S Butler St, Madison, WI", "http://maps.google.com/maps/place?cid=566553957758048622&q=Madison+Hostel,+South+Butler+Street,+Madison,+WI&hl=en&sll=43.075143,-89.37902&sspn=0.006295,0.006295&ie=UTF8&ll=43.081317,-89.392962&spn=0,0&t=h&z=16"
+        %dt.website Website:
+        %dd= link_to "Hostelling Int'l Madison", "http://www.hiusa.org/madison"
+
+      %h1 Rate Card
+
+      %dl
+        %dt One Bed
+        %dd $18
+    .bio
+      %hgroup
+        %h1 Madison Hostel
+
+      %p
+        Hostels are not for everyone and this one has common rooms and showers that might not be your cup of tea. However if you can get past a few details like that you can meet some excellent folks travelling the world and get your own bed to crash on for less than a dinner for two.
+
+      = link_to_image "madison-hostel-exterior-thumb.jpg:madison-hostel-exterior-large.jpg", :title => "Madison Hostel Exterior", :class => 'fancy'
+      = link_to_image "madison-hostel-dining-thumb.jpg:madison-hostel-dining-large.jpg", :title => "Madison Hostel Dining Room", :class => 'fancy'
+      = link_to_image "madison-hostel-common-room-thumb.jpg:madison-hostel-common-room-large.jpg", :title => "Madison Hostel Common Room", :class => 'fancy'
