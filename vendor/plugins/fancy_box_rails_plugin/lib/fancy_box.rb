@@ -7,8 +7,7 @@ module FancyBox
          javascript_include_tag('jquery.fancy_box/jquery.fancybox-1.3.1.pack.js',
                                 'jquery.fancy_box/jquery.easing-1.3.pack.js',
                                 'jquery.fancy_box/load_fancybox',
-                                'jquery.fancy_box/jquery.mousewheel-3.0.2.pack.js', 
-                                 :cache => "fancy_box")
+                                'jquery.fancy_box/jquery.mousewheel-3.0.2.pack.js')
     content << "\n#{stylesheet_link_tag('jquery.fancybox.css')}".html_safe
   end
   
