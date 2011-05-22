@@ -5,6 +5,8 @@
       = yield :page_title
     %meta(charset="UTF-8")
     = stylesheet_link_tag "application"
+    = javascript_include_tag 'jquery'
+    = include_fancy_box
     = yield :head
 
     %script{:type=>"text/javascript", :src=>"http://use.typekit.com/uob4zuw.js"}

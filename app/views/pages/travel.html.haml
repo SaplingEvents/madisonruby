@@ -12,10 +12,12 @@
         %dt.website Website:
         %dd= link_to "Inn On The Park", "http://www.innonthepark.net/?utm_source=madisonruby.org&utm_medium=third_party&utm_campaign=convention"
 
+      %h1 Rate Card
+
       %dl
         %dt One Bed
         %dd $119
-        %dt Two Bed
+        %dt Two Beds
         %dd $129
         %dt Suites
         %dd $159
@@ -24,11 +26,49 @@
         %h1 Best Western Inn On The Park
 
       %p
-        A main selling point of the Inn On The Park is location. The rooms are a little dated and the prices a little high but, man it's convenient.
+        A main selling point of the Inn On The Park is location. The rooms are a little dated but, man it's convenient and you shouldn't be spending much time here anyway, right?
         = link_to "@l4rk (Jon Larkowski)", "http://twitter.com/l4rk"
         can give personal advice about this hotel as he has stayed here a number of times.
 
 
-      = image_tag "inn-on-the-park-exterior-large.jpg", :alt => "Best Western Inn On The Park Exterior"
-      = image_tag "inn-on-the-park-suite-large.jpg", :alt => "Best Western Inn On The Park Suite"
+      = link_to_image "inn-on-the-park-exterior-thumb.jpg:inn-on-the-park-exterior-large.jpg", :title => "Best Western Inn On The Park Exterior", :class => 'fancy'
+      = link_to_image "inn-on-the-park-suite-thumb.jpg:inn-on-the-park-suite-large.jpg", :title => "Best Western Inn On The Park Suite", :class => 'fancy'
+
+  %a{ :name => 'sheraton' }
+  %article
+    %aside
+      %dl
+        %dt.company Address:
+        %dd= link_to "706 John Nolen Dr # 1, Madison, WI 53713-1422", "http://maps.google.com/maps/place?cid=3745741678620690327&q=sheraton+hotel,+madison,+wi&hl=en&sll=43.047265,-89.373579&sspn=0.056731,0.060833&ie=UTF8&ll=43.096721,-89.485188&spn=0,0&t=h&z=13"
+        %dt.website Website:
+        %dd= link_to "Sheraton Madison", "http://www.sheratonmadison.com/"
+
+      %h1 Rate Card
+
+      %dl
+        %dt One Bed
+        %dd $139
+        %dt Two Beds
+        %dd $139
+    .bio
+      %hgroup
+        %h1 Sheraton Madison
+
+      %p
+        This Madison landmark has recently renovated to the tune of $5M and has a number of things going for it despite being a little further away from the action.
+
+      %ul
+        %li Shuttle anywhere within three miles of the Sheraton. (This would easily get you to the conference venue)
+        %li Ample parking and easy on/off access to the interstate system
+        %li Bike/Running path around the lake edge (This would also get you to the conference venue)
+        %li Free wired and wireless internet access in each room
+        %li 32" Flat screen televisions in each room
+        %li Travel Green Wisconsin Certified Hotel
+        %li Starbucks coffee bar in the lobby
+
+      = link_to_image "sheraton-exterior-thumb.jpg:sheraton-exterior-large.jpg", :title => "Sheraton Madison Exterior", :class => 'fancy'
+      = link_to_image "sheraton-room-thumb.jpg:sheraton-room-large.jpg", :title => "Sheraton Madison Room", :class => 'fancy'
+      = link_to_image "sheraton-bar-thumb.jpg:sheraton-bar-large.jpg", :title => "Sheraton Madison Bar", :class => 'fancy'
+      = link_to_image "sheraton-fitness-thumb.jpg:sheraton-fitness-large.jpg", :title => "Sheraton Madison Fitness Center", :class => 'fancy'
+      = link_to_image "sheraton-pool-thumb.jpg:sheraton-pool-large.jpg", :title => "Sheraton Madison Pool", :class => 'fancy'
 
