@@ -1,0 +1,34 @@
+- content_for :page_title do
+  Hotel and Travel Information for Madison Ruby - August 18-20, 2011
+
+%section#sponsors
+  %h1 Hotel &amp; Travel
+  %a{ :name => 'inn_on_the_park' }
+  %article
+    %aside
+      %dl
+        %dt.company Address:
+        %dd= link_to "22 S Carroll Street, Madison, WI", "http://maps.google.com/maps/place?cid=17697481338706337607&q=inn+on+the+park,+madison,+wi&hl=en&sll=43.073162,-89.384665&sspn=0.006295,0.036443&ie=UTF8&ll=43.085502,-89.412575&spn=0,0&t=h&z=15"
+        %dt.website Website:
+        %dd= link_to "Inn On The Park", "http://www.innonthepark.net/?utm_source=madisonruby.org&utm_medium=third_party&utm_campaign=convention"
+
+      %dl
+        %dt One Bed
+        %dd $119
+        %dt Two Bed
+        %dd $129
+        %dt Suites
+        %dd $159
+    .bio
+      %hgroup
+        %h1 Best Western Inn On The Park
+
+      %p
+        A main selling point of the Inn On The Park is location. The rooms are a little dated and the prices a little high but, man it's convenient.
+        = link_to "@l4rk (Jon Larkowski)", "http://twitter.com/l4rk"
+        can give personal advice about this hotel as he has stayed here a number of times.
+
+
+      = image_tag "inn-on-the-park-exterior-large.jpg", :alt => "Best Western Inn On The Park Exterior"
+      = image_tag "inn-on-the-park-suite-large.jpg", :alt => "Best Western Inn On The Park Suite"
+
