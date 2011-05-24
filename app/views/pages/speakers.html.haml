@@ -367,4 +367,40 @@
         %dt.website Website:
         %dd= link_to "sushiandrobots.com", "http://sushiandrobots.com/"
 
+  %article
+    %a{ :name => 'dan_melnick' }
+    %figure
+      = image_tag "img_dan_melnick.jpg", alt: "Dan Melnick"
+    .bio
+      %hgroup
+        %h1 Dan Melnick
+        %p Dan Melnick is a software developer at Obtiva in Chicago, where he works every day to make the world a better place through developing kick ass software. In addition to his work actively developing software, he enjoys writing on the topic and its various implications and permutations on his blog. When he's not coding or writing, he's usually involved in various musical pursuits, including playing guitar and cluttering up his apartment with more records than he has time to listen to.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Obtiva", "http://www.obtiva.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@dan_melnick", "http://twitter.com/dan_melnick"
+        %dt.website Website:
+        %dd= link_to "dmelnick.com", "http://dmelnick.com/"
+
+  %article
+    %a{ :name => 'scott_parker' }
+    %figure
+      = image_tag "img_scott_parker.jpg", alt: "Scott Parker"
+    .bio
+      %hgroup
+        %h1 Scott Parker
+        %p Scott Parker is a Senior Consultant with Obtiva and is widely hailed as a "generally okay human." He's the co-founder of the Chicago Software Craftsmanship group where he has subjected people to a variety of strange and confusing experiences, and is hoping to extend that bafflement to educational institutions foolish enough to agree. Someday he's going to build a new programming language, but until then Scott likes him some Ruby, F#, and Clojure.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Obtiva", "http://www.obtiva.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@citizenparker", "http://twitter.com/citizenparker"
+        %dt.website Website:
+        %dd= link_to "spparker.com", "http://spparker.com/"
+
 = render :partial => 'sponsors'
