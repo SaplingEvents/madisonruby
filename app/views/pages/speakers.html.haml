@@ -287,4 +287,26 @@
         %dt.website Website:
         %dd= link_to "blog.voxdolo.com", "http://blog.voxdolo.com"
 
+  %article
+    %a{ :name => 'brian_hogan' }
+    %figure
+      = image_tag "img_brian_hogan.jpg", alt: "Brian P. Hogan"
+    .bio
+      %hgroup
+        %h1 Brian P. Hogan
+        %p Brian Hogan is an author, editor, web developer, and trainer from Eau Claire, Wisconsin. He’s been developing web sites professionally since 1995 as a freelancer and consultant, and he currently builds web applications using JavaScript and Ruby on Rails. He enjoys teaching and writing about technology, particularly on web development and accessibility
+
+        %p He is the author of HTML5 and CSS3 – Develop With Tomorrow’s Standards Today and is currently a development editor at the Pragmatic Programmers.
+
+        %p When not hacking on code, he’s writing songs, watching “The Simpsons”, or spending quality time with his wife and daughters.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "NAPCS", "http://www.napcs.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@bphogan", "http://twitter.com/bphogan"
+        %dt.website Website:
+        %dd= link_to "bphogan.com", "http://bphogan.com"
+
 = render :partial => 'sponsors'
