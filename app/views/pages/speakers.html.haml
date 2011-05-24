@@ -309,4 +309,26 @@
         %dt.website Website:
         %dd= link_to "bphogan.com", "http://bphogan.com"
 
+  %article
+    %a{ :name => 'tim_connor' }
+    %figure
+      = image_tag "img_tim_connor.jpg", alt: "Tim Connor"
+    .bio
+      %hgroup
+        %h1 Tim Connor
+        %p Tim Connor is the founder of Cloud City Development, a consulting firm in San Francisco that specializes in ruby development for early stage start-ups.
+
+        %p He's been working with ruby since before Rails hit 1.0, so has gotten to see our community grow through some dramatic years of rapidly adapting its best practices - the heavy adoption of agile, TDD, REST, etc. Relatedly, he is almost ready to forgive the community for its crimes, during those years, against his first love, JavaScript.
+
+        %p Tim also helps out with RailsBridge in SF and is passionate about seeing the ruby community continue to become more diverse and approachable.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Cloud City Development", "http://www.cloudcitydev.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@timocratic", "http://twitter.com/timocratic"
+        %dt.website Website:
+        %dd= link_to "cloudcitydev.com", "http://www.cloudcitydev.com"
+
 = render :partial => 'sponsors'
