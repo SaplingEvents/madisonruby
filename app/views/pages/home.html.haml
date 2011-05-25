@@ -28,27 +28,8 @@
       %h1 Our Speakers
       = link_to "View All ▸", speakers_path, class: "more"
     %ul
-      -# %li= link_to image_tag("img_homepage-jeff_casimir.jpg", alt: "Jeff Casimir"), "/speakers#jeff_casimir"
-      -# %li= link_to image_tag("img_homepage-bryan_liles.jpg", alt: "Bryan Liles"), "/speakers#bryan_liles"
-      -# %li= link_to image_tag("img_homepage-jacqui_cox.jpg", alt: "Jacqui Cox"), "/speakers#jacqui_cox"
-      -# %li= link_to image_tag("img_homepage-chad_pytel.jpg", alt: "Chad Pytel"), "/speakers#chad_pytel"
-      -# %li= link_to image_tag("img_homepage-jessie_shternshus.jpg", alt: "Jessie Shternshus"), "/speakers#jessie_shternshus"
-      -# %li= link_to image_tag("img_homepage-matt_yoho.jpg", alt: "Matt Yoho"), "/speakers#matt_yoho"
-      -# %li= link_to image_tag("img_homepage-barry_hess.jpg", alt: "Barry Hess"), "/speakers#barry_hess"
-      -# %li= link_to image_tag("img_homepage-meghann_millard.jpg", alt: "Meghann Millard"), "/speakers#meghann_millard"
-      -# %li= link_to image_tag("img_homepage-matt_margolis.jpg", alt: "Matt Margolis"), "/speakers#matt_margolis"
-      -# %li= link_to image_tag("img_homepage-giles_bowkett.jpg", alt: "Giles Bowkett"), "/speakers#giles_bowkett"
-      -# %li= link_to image_tag("img_homepage-dave_copeland.jpg", alt: "Dave Copeland"), "/speakers#dave_copeland"
-      %li= link_to image_tag("img_homepage-dan_melnick.jpg", alt: "Dan Melnick"), "/speakers#dan_melnick"
-      %li= link_to image_tag("img_homepage-scott_parker.jpg", alt: "Scott Parker"), "/speakers#scott_parker"
-      %li= link_to image_tag("img_homepage-gerred_dillon.png", alt: "Gerred Dillon"), "/speakers#gerred_dillon"
-      %li= link_to image_tag("img_homepage-lori_olson.jpg", alt: "Lori Olson"), "/speakers#lori_olson"
-      %li= link_to image_tag("img_homepage-renee_de_voursney.jpg", alt: "Renée De Voursney"), "/speakers#renee_de_voursney"
-      %li= link_to image_tag("img_homepage-stephen_caudill.jpg", alt: "Stephen Caudill"), "/speakers#stephen_caudill"
-      %li= link_to image_tag("img_homepage-brian_hogan.jpg", alt: "Brian P. Hogan"), "/speakers#brian_hogan"
-      %li= link_to image_tag("img_homepage-tim_connor.jpg", alt: "Tim Connor"), "/speakers#tim_connor"
-      %li= link_to image_tag("img_homepage-collin_schaafsma.png", alt: "Collin Schaafsma"), "/speakers#collin_schaafsma"
-      %li= link_to image_tag("img_homepage-jina_bolton.jpg", alt: "Jina Bolton"), "/speakers#jina_bolton"
+      - random_speakers(10).each do |speaker|
+        %li= link_to image_tag(speaker[0], alt: speaker[1]), speaker[2]
 
 %section#workshops
   %h1 Our Workshops
