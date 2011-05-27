@@ -403,4 +403,23 @@
         %dt.website Website:
         %dd= link_to "spparker.com", "http://spparker.com/"
 
+  %article
+    %a{ :name => 'jon_larkowski' }
+    %figure
+      = image_tag "img_jon_larkowski.jpg", alt: "Jon Larkowski"
+    .bio
+      %hgroup
+        %h1 Jon Larkowski
+        %p
+          Lark hit escape velocity launching from powerhouse Rails consultancy #{link_to "Hashrocket","http://www.hashrocket.com/"}, where he was an original member, eventually floating into a happy orbit at #{link_to "Picture of Health", "http://www.pictureofhealth.com/"}. You may know him from #{link_to "Hashrocket’s Book Club", "http://vimeo.com/album/179636"}, or their #{link_to "numerous videos", "http://vimeo.com/l4rk/videos/appears"}, or from speaking at a Ruby conference near you. He hails from scenic Chippewa Falls, Wisconsin, home of speedy Cray supercomputers and refreshing Leinenkugel’s beer. Lately, he’s into the raw side of food, the stretchy side of yoga, the heavy side of progressive metal, and the spinny side of ping pong. He holds an Electrical Engineering/Computer Science degree from the University of Wisconsin-Madison, though the only thing electrical he ever did was wire his parents’ garage. He codes for the forest, while pruning the trees.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Picture of Health", "http://www.pictureofhealth.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@l4rk", "http://twitter.com/l4rk"
+        %dt.website Website:
+        %dd= link_to "blog.l4rk.com", "http://blog.l4rk.com/"
+
 = render :partial => 'sponsors'

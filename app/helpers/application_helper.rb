@@ -19,7 +19,8 @@ module ApplicationHelper
     ["img_homepage-brian_hogan.jpg", "Brian P. Hogan", "/speakers#brian_hogan"],
     ["img_homepage-tim_connor.jpg", "Tim Connor", "/speakers#tim_connor"],
     ["img_homepage-collin_schaafsma.png", "Collin Schaafsma", "/speakers#collin_schaafsma"],
-    ["img_homepage-jina_bolton.jpg", "Jina Bolton", "/speakers#jina_bolton"]]
+    ["img_homepage-jina_bolton.jpg", "Jina Bolton", "/speakers#jina_bolton"],
+    ["img_homepage-jon_larkowski.jpg", "Jon Larkowski", "/speakers#jon_larkowski"]]
 
   def random_speakers(limit=10)
     HOMEPAGE_SPEAKERS.shuffle[1..limit]
