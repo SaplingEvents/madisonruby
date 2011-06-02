@@ -444,4 +444,23 @@
         %dt.website Website:
         %dd= link_to "jasonmccay.com", "http://jasonmccay.com"
 
+  %article
+    %a{ :name => 'rick_bradley' }
+    %figure
+      = image_tag "img_rick_bradley.jpg", alt: "Rick Bradley"
+    .bio
+      %hgroup
+        %h1 Rick Bradley
+        %p
+          Rick is one of the problem children of O.G. Consulting, who, ironically, clean up other kids' ruby, domain, team, process, and business messes (but only if they're using ruby -- one must have standards, after all). Inventor of fibonacci indentation and the CANT chart, these days Rick fancies a nice whiskey_disk hacking session to blow off steam.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "O.G. Consulting", "http://www.ogtastic.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@rickbradley", "http://twitter.com/rickbradley"
+        %dt.website Website:
+        %dd= link_to "rickbradley.com", "http://rickbradley.com"
+
 = render :partial => 'sponsors'
