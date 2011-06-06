@@ -463,4 +463,32 @@
         %dt.website Website:
         %dd= link_to "rickbradley.com", "http://rickbradley.com"
 
+  %article
+    %a{ :name => 'steve_klabnik' }
+    %figure
+      = image_tag "img_steve_klabnik.jpg", alt: "Steve Klabnik"
+    .bio
+      %hgroup
+        %h1 Steve Klabnik
+        %p
+          Steve is a software craftsman, aspiring digital humanities scholar, and the maintainer of Hackety Hack and Shoes. He also started the 
+          = link_to 'rstat.us', 'http://rstat-us'
+          project.
+
+        %p
+          Steve is a writer, who happens to work in Ruby rather than English. Though he does contribute to five or six blogs, including Timeless with Magnus Holm and the Changelog, he avidly contributes to many open source projects. He's interested in applying the compositional and communication skills that the humanities offer to source code. Anyone can bang out software that works, but composing software that's well-crafted is a much different and more difficult endeavor.
+
+        %p
+          A large part of Steve's work focuses on education and software literacy, and so he's been running _why's Hackety Hack project for the last two years. Now at a 1.0 release, tens of thousands of prospective Rubyists have gotten their first taste of developing software. Closely related to Hackety Hack is Shoes, which is the best little GUI toolkit for Rubyists who want to create desktop applications.
+
+        %p
+          Finally, rstat.us is a microblogging platform written in Ruby. It's decentralized, distributed, and 100% open source. People who are sick of software sharecropping can run their own nodes, control their own data, and yet still participate in the social network. As we live more and more of our lives online, privacy, security, and control are incredibly important.
+
+    %aside
+      %dl
+        %dt.twitter Twitter:
+        %dd= link_to "@steveklabnik", "http://twitter.com/steveklabnik"
+        %dt.website Website:
+        %dd= link_to "steveklabnik.com", "http://steveklabnik.com"
+
 = render :partial => 'sponsors'

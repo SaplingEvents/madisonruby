@@ -22,6 +22,7 @@ module ApplicationHelper
     ["img_homepage-jina_bolton.jpg", "Jina Bolton", "/speakers#jina_bolton"],
     ["img_homepage-rick_bradley.jpg", "Rick Bradley", "/speakers#rick_bradley"],
     ["img_homepage-jason_mccay.png", "Jason McCay", "/speakers#jason_mccay"],
+    ["img_homepage-steve_klabnik.jpg", "Steve Klabnik", "/speakers#steve_klabnik"],
     ["img_homepage-jon_larkowski.jpg", "Jon Larkowski", "/speakers#jon_larkowski"]]
 
   def random_speakers(limit=10)
