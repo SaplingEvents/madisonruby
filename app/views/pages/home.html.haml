@@ -50,16 +50,40 @@
     -# %p= link_to "View More ▸", "#", class: "more"
   %article
     <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FMadison-Ruby%2F115398258538061&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true"></iframe>
-  -# %article
-    -# %h1 Overheard
-    -# %ul
-      -# - 3.times do
-        -# %li{ class: cycle("", "", "last") }
-          -# %p
-            -# Our friends
-            -# = link_to "@harvest", "#"
-            -# just shipped a simple wrapper from Sphinx called Thebes:
-            -# = link_to "http://vurl.me/asdjfif", "#"
-          -# %p.meta== 3 hours ago | #{link_to "Reply", "#"}
+  %article
+    %h1 Overheard
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    :javascript
+      new TWTR.Widget({
+        version: 2,
+        type: 'search',
+        search: '@madisonruby',
+        interval: 6000,
+        title: '',
+        subject: 'Overheard',
+        width: 'auto',
+        height: 300,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#a60e13'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#444444',
+            links: '#a60e13'
+          }
+        },
+        features: {
+          scrollbar: true,
+          loop: false,
+          live: true,
+          hashtags: true,
+          timestamp: true,
+          avatars: true,
+          toptweets: true,
+          behavior: 'all'
+        }
+      }).render().start();
 
 = render :partial => 'sponsors'
