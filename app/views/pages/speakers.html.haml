@@ -509,4 +509,22 @@
         %dt.website Website:
         %dd= link_to "http://blog.therubymug.com", "http://blog.therubymug.com"
 
+  %article
+    %a{ :name => 'charles_nutter' }
+    %figure
+      = image_tag "img_charles_nutter.jpg", alt: "Charles Oliver Nutter"
+    .bio
+      %hgroup
+        %h1 Charles Oliver Nutter
+        %p Charles Oliver Nutter works at Engine Yard on the JRuby project. He has been a JRuby co-lead since 2006, helping to make JRuby an outstanding Ruby implementation. Charles believes the JVM is the best runtime for new languages, and along with JRuby, he launched the Mirah programming language, and continues to work to improve the state of language development on the JVM.
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "EngineYard", "http://engineyard.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@headius", "http://twitter.com/headius"
+        %dt.website Website:
+        %dd= link_to "http://blog.headius.com", "http://blog.headius.com"
+
 = render :partial => 'sponsors'
