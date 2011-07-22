@@ -5,6 +5,7 @@ MadisonRuby::Application.routes.draw do
   end
 
   match 'home' => "pages#home", :as => "home"
+  match 'schedule' => "pages#schedule", :as => "schedule"
   match 'speakers' => "pages#speakers", :as => "speakers"
   match 'sponsors' => "pages#sponsors", :as => "sponsors"
   match 'travel' => "pages#travel", :as => "travel"
