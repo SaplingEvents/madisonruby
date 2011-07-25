@@ -13,6 +13,7 @@ MadisonRuby::Application.routes.draw do
   match 'hotels/hyatt_place' => 'pages#hyatt_place', :as => "hyatt_place"
   match 'hotels/inn_on_the_park' => 'pages#inn_on_the_park', :as => "inn_on_the_park"
   match 'hotels/sheraton' => 'pages#sheraton', :as => "sheraton"
+  match 'posts/2011-07-25-Conference-Error-in-Your-Favor-Collect-225' => 'pages#bank_error', :as => "bank_error"
 
   unless Rails.env.production?
     match 'ui(/:action)', controller: 'ui'
