@@ -86,23 +86,27 @@
         }
       }).render().start();
 
-%section#venue
+%section#workshops
   %h1 Our Venue
-  %p 
+  = link_to(image_tag("overture-logo-475px.png", alt: "Overture Center for the Arts"), 'http://www.overturecenter.com')
+  %p In 1998, local businessman W. Jerome Frautschi made a breathtaking, multimillion dollar commitment for the development of a cultural arts district in downtown Madison. The Overture Foundation was established to solve the space needs of the city's major arts organizations, and internationally famous architect Cesar Pelli designed the project.
+
+  %p
+    Madison Ruby is taking over this venue for three days.  Using everything from breakout rooms, such as
+    = link_to 'Rotunda Studio', 'http://www.overturecenter.com/about/venues/rotunda-studio'
+    and
+    = link_to 'Wisconsin Studio', 'http://www.overturecenter.com/about/venues/wisconsin-studio'
+    to the three-hundred and fifty seat
+    = link_to 'Playhouse Theater', 'http://www.overturecenter.com/about/venues/the-playhouse'
+    we have a visually striking environment to inspire and engergize our attendees.
+
+%section#sidebar
   %article
-    = link_to(image_tag("overture-logo.png", alt: "Overture Center for the Arts"), 'http://www.overturecenter.com')
-    %h1 Overture Center for the Arts
-    %p In 1998, local businessman W. Jerome Frautschi made a breathtaking, multimillion dollar commitment for the development of a cultural arts district in downtown Madison. The Overture Foundation was established to solve the space needs of the city's major arts organizations, and internationally famous architect Cesar Pelli designed the project.
-
+    %h1 How To Get There
     %p
-      Madison Ruby is taking over this venue for three days.  Using everything from breakout rooms, such as
-      = link_to 'Rotunda Studio', 'http://www.overturecenter.com/about/venues/rotunda-studio'
-      and
-      = link_to 'Wisconsin Studio', 'http://www.overturecenter.com/about/venues/wisconsin-studio'
-      to the three-hundred and fifty seat
-      = link_to 'Playhouse Theater', 'http://www.overturecenter.com/about/venues/the-playhouse'
-      we have a visually striking environment to inspire and engergize our attendees.
-
-
+      Overture Center for the Arts
+      %br/
+      201 State Street, Madison, WI
+    -# TODO: Google Map
 
 = render :partial => 'sponsors'
