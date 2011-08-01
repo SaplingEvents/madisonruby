@@ -29,14 +29,15 @@
     %tr
       %td.slot 9:30 - 10:15AM
       %td.plenary{ colspan: '2' }
-        Jessie Shternshus, The Improv Effect
+        = link_to "Jessie Shternshus", speakers_path(anchor: 'jessie_shternshus')
+        , The Improv Effect
 
     %tr
       %td.slot 10:15 - 10:30AM
       %td.plenary{ colspan: '2' }
         A Convenient Truth (How To Configure Your Environment)
         .name
-          Rogelio Samour
+          = link_to "Rogelio Samour", speakers_path(anchor: 'rogelio_samour')
 
     %tr
       %td.slot 10:30 - 10:45AM
@@ -48,11 +49,12 @@
       %td.talk
         MINSWAN
         .name
-          Bryan Liles
+          = link_to "Bryan Liles", speakers_path(anchor: 'bryan_liles')
       %td.talk.studio
         "Free Whiskey"
         .name
-          Rick Bradley, O. G. Consulting
+          = link_to "Rick Bradley", speakers_path(anchor: 'rick_bradley')
+          , O. G. Consulting
 
     %tr
       %td.slot 11:00 - 11:30AM
@@ -66,11 +68,13 @@
         %br/
         Language Will Tear Us Apart, Again.
         .name
-          Meghann Millard, Unspace Interactive
+          = link_to 'Meghann Millard', speakers_path(anchor: 'meghann_millard')
+          , Unspace Interactive
       %td.talk.studio
         Tip of the Skinny Iceberg
         .name
-          Stephen Caudill, Hashrocket
+          = link_to "Stephen Caudill", speakers_path(anchor: 'stephen_caudill')
+          , Hashrocket
 
     %tr
       %td.slot 12:00 - 1:30PM
@@ -86,7 +90,8 @@
       %td.talk.studio
         Making Awesome Command Line Apps in Ruby
         .name
-          Dave Copeland, OPOWER
+          = link_to "Dave Copeland", speakers_path(anchor: 'dave_copeland')
+          , OPOWER
 
     %tr
       %td.slot 2:00 - 2:10PM
@@ -103,11 +108,12 @@
       %td.talk
         "Life On My Home Planet."
         .name
-          Giles Bowkett
+          = link_to "Giles Bowkett", speakers_path(anchor: 'giles_bowkett')
       %td.talk.studio
         "I'm mad as hell, and I'm not going to take this anymore!", Strategies for Coping in Chaos
         .name
-          Jacqui Cox, NY Times
+          = link_to "Jacqui Cox", speakers_path(anchor: 'jacqui_cox')
+          , NY Times
 
     %tr
       %td.slot 3:00 - 3:30PM
@@ -119,11 +125,13 @@
       %td.talk
         jQuery Mobile on Rails
         .name
-          Chad Pytel, Thoughtbot
+          = link_to "Chad Pytel", speakers_path(anchor: 'chad_pytel')
+          , Thoughtbot
       %td.talk.studio
         Scripting Vim with Ruby
         .name
-          Matt Margolis, Getty Images
+          = link_to "Matt Margolis", speakers_path(anchor: 'matt_margolis')
+          , Getty Images
 
     %tr
       %td.slot 4:15 - 5:45PM
@@ -171,7 +179,10 @@
       %td.talk.plenary{ colspan: '2' }
         Growing a Software as a Service Application Panel
         .name
-          BJ Hess, Harvest / Jason McKay, MongoHQ / Chris Mathieu, Tropo - Moderated by Steven Bristol
+          = link_to "Barry Hess", speakers_path(anchor: 'barry_hess')
+          , Harvest / 
+          = link_to "Jason McCay", speakers_path(anchor: 'jason_mccay')
+          , MongoHQ / Chris Mathieu, Tropo - Moderated by Steven Bristol
 
     %tr
       %td.slot 10:15 - 10:30AM
@@ -183,11 +194,11 @@
       %td.talk
         Literate Code
         .name
-          Steve Klabnik
+          = link_to "Steve Klabnik", speakers_path(anchor: 'steve_klabnik')
       %td.talk.studio
         "Consultants &amp; Rockstars, Who needs 'em"
         .name
-          Lori Olson
+          = link_to "Lori Olson", speakers_path(anchor: 'lori_olson')
 
     %tr
       %td.slot 11:00 - 11:20AM
