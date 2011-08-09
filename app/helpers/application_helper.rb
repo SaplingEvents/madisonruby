@@ -6,7 +6,6 @@ module ApplicationHelper
     ["img_homepage-jessie_shternshus.jpg", "Jessie Shternshus", "/speakers#jessie_shternshus"],
     ["img_homepage-matt_yoho.jpg", "Matt Yoho", "/speakers#matt_yoho"],
     ["img_homepage-barry_hess.jpg", "Barry Hess", "/speakers#barry_hess"],
-    ["img_homepage-meghann_millard.jpg", "Meghann Millard", "/speakers#meghann_millard"],
     ["img_homepage-matt_margolis.jpg", "Matt Margolis", "/speakers#matt_margolis"],
     ["img_homepage-giles_bowkett.jpg", "Giles Bowkett", "/speakers#giles_bowkett"],
     ["img_homepage-dave_copeland.jpg", "Dave Copeland", "/speakers#dave_copeland"],
