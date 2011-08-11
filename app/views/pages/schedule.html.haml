@@ -46,6 +46,22 @@
 
     %tr
       %td.slot 10:30 - 11:00AM
+      %td.talk.plenary{ colspan: '2' }
+        TravisCI: Continuously Integrating The OSS Community
+        %ul
+          %li.name
+            = link_to "Josh Kalderimis", '/speakers#josh_kalderimis'
+          %li.name
+            = link_to "Sven Fuchs", '/speakers#sven_fuchs'
+
+
+    %tr
+      %td.slot 11:00 - 11:30AM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 11:30 - 12:00PM
       %td.talk
         MINSWAN
         .name
@@ -55,21 +71,6 @@
         .name
           = link_to "Rick Bradley", speakers_path(anchor: 'rick_bradley')
           , O. G. Consulting
-
-    %tr
-      %td.slot 11:00 - 11:30AM
-      %td.plenary{ colspan: '2' }
-        Break
-
-    %tr
-      %td.slot 10:30 - 11:00AM
-      %td.talk
-        &nbsp;
-      %td.talk.studio
-        Tip of the Skinny Iceberg
-        .name
-          = link_to "Stephen Caudill", speakers_path(anchor: 'stephen_caudill')
-          , Hashrocket
 
     %tr
       %td.slot 12:00 - 1:30PM
@@ -94,7 +95,7 @@
         Tips for healthy sitting / Stretching (Optional)
 
     %tr
-      %td.slot 2:10 - 2:30PM
+      %td.slot 2:00 - 2:30PM
       %td.plenary{ colspan: '2' }
         Break
 
@@ -208,7 +209,7 @@
     %tr
       %td.slot 10:30 - 11:00AM
       %td.talk
-        Literate Code
+        Code as Literature
         .name
           = link_to "Steve Klabnik", speakers_path(anchor: 'steve_klabnik')
       %td.talk.studio
@@ -217,13 +218,13 @@
           = link_to "Lori Olson", speakers_path(anchor: 'lori_olson')
 
     %tr
-      %td.slot 11:00 - 11:20AM
-      %td.plenary{ colspan: '2' }
-        Break
+      %td.slot 11:00 - 11:10AM
+      %td.plenary{ colspan: '2'} Stretching
 
     %tr
-      %td.slot 11:20 - 11:30AM
-      %td.plenary{ colspan: '2'} Stretching
+      %td.slot 11:00 - 11:30AM
+      %td.plenary{ colspan: '2' }
+        Break
 
     %tr
       %td.slot 11:30 - 12:00PM
@@ -251,6 +252,10 @@
         "MongoMapper Migrations - Handling Changes With No Schema"
         .name
           = link_to 'Tim Connor', speakers_path(anchor: 'tim_connor')
+
+    %tr
+      %td.slot 2:00 - 2:10PM
+      %td.plenary{ colspan: '2'} Stretching
 
     %tr
       %td.slot 2:00 - 2:30PM
@@ -306,11 +311,30 @@
         Break
 
     %tr
-      %td.slot 5:15 - 6:15PM
+      %td.slot 5:15 - 5:45PM
+      %td.talk
+        Tip of the Skinny Iceberg
+        .name
+          = link_to "Stephen Caudill", speakers_path(anchor: 'stephen_caudill')
+          , Hashrocket
+
+      %td.talk.studio
+        TBA
+        .name
+          TBA
+
+    %tr
+      %td.slot 5:45 - 6:30PM
       %td.talk.plenary{ colspan: '2' }
         Testing Panel
         .name
-          TBA
+          Corey Haines, Panelist
+        .name
+          TBA, Panelist
+        .name
+          TBA, Panelist
+        .name
+          Steven Bristol, Moderator
 
     %tr
       %td.slot 6:15 - 6:30PM
