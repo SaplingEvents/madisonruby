@@ -769,4 +769,24 @@
         %dt.website Website:
         %dd= link_to "http://blog.cookiestack.com", "http://blog.cookiestack.com"
 
+  %article
+    %a{ :name => 'brad_grzesiak' }
+    %figure
+      = image_tag "img_brad_grzesiak.jpg", alt: "Brad Grzesiak"
+    .bio
+      %hgroup
+        %h1 Brad Grzesiak
+
+      %h2.title
+        The Ruby Environment
+
+    %aside
+      %dl
+        %dt.company Company:
+        %dd= link_to "Bendyworks", "http://bendyworks.com/"
+        %dt.twitter Twitter:
+        %dd= link_to "@listrophy", "http://twitter.com/listrophy"
+        %dt.website Website:
+        %dd= link_to "http://namingthingsishard.com", "http://namingthingsishard.com"
+
 = render :partial => 'sponsors'
