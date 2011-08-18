@@ -12,6 +12,7 @@ module ApplicationHelper
     ["img_homepage-dan_melnick.jpg", "Dan Melnick", "/speakers#dan_melnick"],
     ["img_homepage-scott_parker.jpg", "Scott Parker", "/speakers#scott_parker"],
     ["img_homepage-gerred_dillon.png", "Gerred Dillon", "/speakers#gerred_dillon"],
+    ["img_homepage-brad_grzesiak.png", "Brad Grzesiak", "/speakers#brad_grzesiak"],
     ["img_homepage-lori_olson.jpg", "Lori Olson", "/speakers#lori_olson"],
     ["img_homepage-renee_de_voursney.jpg", "Renee De Voursney", "/speakers#renee_de_voursney"],
     ["img_homepage-stephen_caudill.jpg", "Stephen Caudill", "/speakers#stephen_caudill"],
