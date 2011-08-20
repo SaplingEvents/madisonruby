@@ -4,267 +4,6 @@
 %section#schedule
   %h1 Our Schedule
 
-  %h2 Thursday, August 18, 2011
-  %table{ :cellspacing => 0}
-    %thead
-      %tr
-        %th &nbsp;
-        %th
-          %h3 Promenade Hall
-        %th
-          %h3 Wisconsin Studio
-        %th
-          %h3 Rotunda Studio
-    %tr
-      %td.slot 8:00 - 9:00AM
-      %td.plenary{ colspan: '3' }
-        Registration &amp; Coffee Social
-    %tr
-      %td.slot 9:00 - 9:30AM
-      %td.training
-        Git Workshop
-        .name
-          Scott Chacon, Github
-      %td.open.training
-        &nbsp;
-      %td.open
-        Open Hacking
-    %tr
-      %td.slot 9:30 - 12:00 Noon
-      %td.training
-        &nbsp;
-      %td.training.studio
-        RailsBridge Workshop
-        .name
-          Desi McAdam
-      %td.open
-        &nbsp;
-    %tr
-      %td.slot 12:00 Noon - 1:00PM
-      %td.plenary{ colspan: '2' }
-        Lunch
-      %td.open
-        &nbsp;
-    %tr
-      %td.slot 1:00 - 3:00PM
-      %td.training
-        Git Workshop (cont'd)
-        .name
-          Scott Chacon, Github
-      %td.training.studio
-        RailsBridge Workshop (cont'd)
-        .name
-          Desi McAdam
-      %td.open
-        &nbsp;
-    %tr
-      %td.slot 3:00 - 3:30PM
-      %td.plenary{ colspan: '2' }
-        Break
-      %td.open
-        &nbsp;
-    %tr
-      %td.slot 3:30 - 4:00PM
-      %td.training
-        &nbsp;
-      %td.training.studio
-        Wrap Up
-      %td.open
-        &nbsp;
-    %tr
-      %td.slot 5:00 - 5:30PM
-      %td.training
-        Wrap Up
-      %td.training.studio
-        RailsBridge Workshop Happy Hour
-        .name
-          Desi McAdam
-          %br
-          Location: TBA
-      %td.open
-        Open Hacking
-    %tr
-      %td.slot 5:30 - 7:00PM
-      %td{ colspan: '3' }
-        = link_to "High Tech Happy Hour", 'http://www.hthh.org/'
-        10 Year Anniversary Celebration, Memorial Union Terrace
-
-  %h2 Friday, August 19, 2011
-  %table{ :cellspacing => 0}
-    %thead
-      %tr
-        %th &nbsp;
-        %th
-          %h3 Playhouse
-        %th
-          %h3 Wisconsin Studio
-
-    %tr
-      %td.slot 8:00 - 8:45AM
-      %td.plenary{ colspan: '2' }
-        Registration &amp; Coffee Social
-
-    %tr
-      %td.slot 8:45 - 9:30AM
-      %td.talk.plenary{ colspan: '2' }
-        Opening Address / Announcements
-        .name
-          Jim Remsik &amp; Robert Pitts
-
-    %tr
-      %td.slot 9:30 - 10:15AM
-      %td.plenary{ colspan: '2' }
-        = link_to "Jessie Shternshus", speakers_path(anchor: 'jessie_shternshus')
-        , The Improv Effect
-
-    %tr
-      %td.slot 10:15 - 10:30AM
-      %td.talk.plenary{ colspan: '2' }
-        A Convenient Truth (How To Configure Your Environment)
-        .name
-          = link_to "Rogelio Samour", speakers_path(anchor: 'rogelio_samour')
-
-    %tr
-      %td.slot 10:30 - 10:45AM
-      %td.plenary{ colspan: '2' }
-        Break
-
-    %tr
-      %td.slot 10:30 - 11:00AM
-      %td.talk.plenary{ colspan: '2' }
-        TravisCI: Continuously Integrating The OSS Community
-        %ul
-          %li.name
-            = link_to "Josh Kalderimis", '/speakers#josh_kalderimis'
-          %li.name
-            = link_to "Sven Fuchs", '/speakers#sven_fuchs'
-
-
-    %tr
-      %td.slot 11:00 - 11:30AM
-      %td.plenary{ colspan: '2' }
-        Break
-
-    %tr
-      %td.slot 11:30 - 12:00PM
-      %td.talk
-        MINSWAN
-        .name
-          = link_to "Bryan Liles", speakers_path(anchor: 'bryan_liles')
-      %td.talk.studio
-        "Free Whiskey"
-        .name
-          = link_to "Rick Bradley", speakers_path(anchor: 'rick_bradley')
-          , O. G. Consulting
-
-    %tr
-      %td.slot 12:00 - 1:30PM
-      %td.plenary{ colspan: '2' }
-        Lunch - Exploring Madison on Engine Yard's dime
-
-    %tr
-      %td.slot 1:30 - 2:00PM
-      %td.talk
-        Re-imagining Rails Messaging
-        .name
-          = link_to 'Gerred Dillon', speakers_path(anchor: 'gerred_dillon')
-      %td.talk.studio
-        Making Awesome Command Line Apps in Ruby
-        .name
-          = link_to "Dave Copeland", speakers_path(anchor: 'dave_copeland')
-          , OPOWER
-
-    %tr
-      %td.slot 2:00 - 2:10PM
-      %td.plenary{ colspan: '2' }
-        Tips for healthy sitting / Stretching (Optional)
-
-    %tr
-      %td.slot 2:00 - 2:30PM
-      %td.plenary{ colspan: '2' }
-        Break
-
-    %tr
-      %td.slot 2:30 - 3:00PM
-      %td.talk
-        Life On My Home Planet
-        .name
-          = link_to "Giles Bowkett", speakers_path(anchor: 'giles_bowkett')
-      %td.talk.studio
-        "I'm mad as hell, and I'm not going to take this anymore!", Strategies for Coping in Chaos
-        .name
-          = link_to "Jacqui Cox", speakers_path(anchor: 'jacqui_cox')
-          , NY Times
-
-    %tr
-      %td.slot 3:00 - 3:30PM
-      %td.plenary{ colspan: '2' }
-        Coffee / Snack Break
-
-    %tr
-      %td.slot 3:30 - 4:00PM
-      %td.talk
-        jQuery Mobile on Rails
-        .name
-          = link_to "Chad Pytel", speakers_path(anchor: 'chad_pytel')
-          , Thoughtbot
-      %td.talk.studio
-        Scripting Vim with Ruby
-        .name
-          = link_to "Matt Margolis", speakers_path(anchor: 'matt_margolis')
-          , Getty Images
-
-    %tr
-      %td.slot 4:00 - 4:15PM
-      %td.plenary{ colspan: '2' }
-        Break
-
-    %tr
-      %td.slot 4:15 - 5:15PM
-      %td.talk.plenary{ colspan: '2' }
-        %p Local Flavor: Madison-area non-technical craftspeople sharing their passion
-        %ul
-          %li.name
-            Gail Ambrosius - Master Choclatier,
-            = link_to "Gail Ambrosius", 'http://gailambrosius.com/'
-          %li.name
-            Rob Lobreglio - Brewmaster,
-            = link_to "Great Dane Pub & Brewery", 'http://www.greatdanepub.com/'
-          %li.name
-            Jeanne Carpenter,
-            = link_to "Wisconsin Cheese Originals", 'http://www.wisconsincheeseoriginals.com/'
-
-
-    %tr
-      %td.slot 5:15 - 6:00PM
-      %td.talk.plenary{ colspan: '2' }
-        Lightning Talks
-
-    %tr
-      %td.slot 6:00 - 6:15PM
-      %td.plenary{ colspan: '2' }
-        End of day announcements
-        .name
-          Jim Remsik &amp; Robert Pitts
-
-    %tr
-      %td.slot 6:15 - 8:00PM
-      %td.talk{ colspan: '2' }
-        Healthy Hacker 5K Fun Run,
-        = link_to "Register Now", "http://healthyhackermadison.eventbrite.com/"
-        (it's free!)
-        .name
-          Organized by
-          = link_to 'Brighter Planet', 'http://brighterplanet.com'
-
-    %tr
-      %td.slot  8:00PM - ?
-      %td.plenary{ colspan: '2' }
-        Drinkup at Great Dane Pub &amp; Brewery
-        .name
-          Organized by
-          = link_to 'Github', 'http://www.github.com/'
-
   %h2 Saturday, August 20, 2011
   %table{ :cellspacing => 0}
     %thead
@@ -316,15 +55,16 @@
         Break
 
     %tr
-      %td.slot 11:30 - 12:00PM
+      %td.slot 11:30 - 12:10PM
       %td.talk
         "Have Fun the Rong Way"
         .name
           = link_to "Matt Yoho", speakers_path(anchor: 'matt_yoho')
-      %td.talk.studio
         Blow Up Your Views
         .name
           = link_to 'Jeff Casimir', speakers_path(anchor: 'jeff_casimir')
+      %td.talk.studio
+        Lightning Talks
 
     %tr
       %td.slot 12:00 - 1:30PM
@@ -419,9 +159,11 @@
         .name
           Corey Haines, Panelist
         .name
-          TBA, Panelist
+          Jon Larkowski, Panelist
         .name
-          TBA, Panelist
+          Bryan Liles, Panelist
+        .name
+          Chad Pytel, Panelist
         .name
           Steven Bristol, Moderator
 
