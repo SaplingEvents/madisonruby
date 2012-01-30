@@ -1,0 +1,197 @@
+- content_for :page_title do
+  Schedule - Don't Miss Anything - August 18-20, 2011 - Madison, WI
+
+%section#schedule
+  %h1 Our Schedule
+
+  %h2 Saturday, August 20, 2011
+  %table{ :cellspacing => 0}
+    %thead
+      %tr
+        %th &nbsp;
+        %th
+          %h3 Playhouse
+        %th
+          %h3 Wisconsin Studio
+
+    %tr
+      %td.slot 9:00 - 10:30AM
+      %td.plenary{ colspan: '2' }
+        Coffee
+
+    %tr
+      %td.slot 9:15 - 10:15AM
+      %td.talk.plenary{ colspan: '2' }
+        Growing a Software as a Service Application Panel
+        .name
+          = link_to "Barry Hess", speakers_path(anchor: 'barry_hess')
+          , Harvest / 
+          = link_to "Jason McCay", speakers_path(anchor: 'jason_mccay')
+          , MongoHQ / Chris Mathieu, Tropo - Moderated by Steven Bristol
+
+    %tr
+      %td.slot 10:15 - 10:30AM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 10:30 - 11:00AM
+      %td.talk
+        Code as Literature
+        .name
+          = link_to "Steve Klabnik", speakers_path(anchor: 'steve_klabnik')
+      %td.talk.studio
+        "Consultants &amp; Rockstars, Who needs 'em"
+        .name
+          = link_to "Lori Olson", speakers_path(anchor: 'lori_olson')
+
+    %tr
+      %td.slot 11:00 - 11:10AM
+      %td.plenary{ colspan: '2'} Stretching
+
+    %tr
+      %td.slot 11:00 - 11:30AM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 11:30 - 12:10PM
+      %td.talk
+        "Have Fun the Rong Way"
+        .name
+          = link_to "Matt Yoho", speakers_path(anchor: 'matt_yoho')
+        Blow Up Your Views
+        .name
+          = link_to 'Jeff Casimir', speakers_path(anchor: 'jeff_casimir')
+      %td.talk.studio
+        Lightning Talks
+
+    %tr
+      %td.slot 12:00 - 1:30PM
+      %td.plenary{ colspan: '2' }
+        Lunch on Engine Yard
+
+    %tr
+      %td.slot 1:30 - 2:00PM
+      %td.talk
+        "Building the Great Wall: API Driven Applications"
+        .name
+          = link_to "Dan Melnick & Scott Parker", speakers_path(anchor: 'dan_melnick')
+      %td.talk.studio
+        "MongoMapper Migrations - Handling Changes With No Schema"
+        .name
+          = link_to 'Tim Connor', speakers_path(anchor: 'tim_connor')
+
+    %tr
+      %td.slot 2:00 - 2:10PM
+      %td.plenary{ colspan: '2'} Stretching
+
+    %tr
+      %td.slot 2:00 - 2:30PM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 2:30 - 3:00PM
+      %td.talk
+        "Whose Wife Are You?"
+        .name
+          = link_to 'Renée Devoursney', speakers_path(anchor: 'renee_de_voursney')
+      %td.talk.studio
+        "Kick Your Project in the Mouth"
+        .name
+          = link_to 'Collin Schaafsma', speakers_path(anchor: 'collin_schaafsma')
+
+    %tr
+      %td.slot 3:00 - 3:30PM
+      %td.plenary{ colspan: '2' }
+        Coffee Break
+
+    %tr
+      %td.slot 3:30 - 4:00PM
+      %td.talk
+        "Who, What, Where, When, Why, and How to Test"
+        .name
+          = link_to 'Jon Larkowski', speakers_path(anchor: 'jon_larkowski')
+      %td.talk.studio
+        "Creating RubyGems from Scratch"
+        .name
+          = link_to 'Brian Hogan', speakers_path(anchor: 'brian_hogan')
+
+    %tr
+      %td.slot 4:00 - 4:30PM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 4:30 - 5:00PM
+      %td.talk
+        What Makes JRuby Different?
+        .name
+          = link_to 'Charlie Nutter', speakers_path(anchor: 'charlie_nutter')
+      %td.talk.studio
+        "CSS Workflow With Sass"
+        .name
+          = link_to 'Jina Bolton', speakers_path(anchor: 'jina_bolton')
+
+    %tr
+      %td.slot 5:00 - 5:15PM
+      %td.plenary{ colspan: '2' }
+        Break
+
+    %tr
+      %td.slot 5:15 - 5:45PM
+      %td.talk
+        Tip of the Skinny Iceberg
+        .name
+          = link_to "Stephen Caudill", speakers_path(anchor: 'stephen_caudill')
+          , Hashrocket
+
+      %td.talk.studio
+        The Ruby Environment
+        .name
+          Brad Grzesiak
+
+    %tr
+      %td.slot 5:45 - 6:30PM
+      %td.talk.plenary{ colspan: '2' }
+        Testing Panel
+        .name
+          Corey Haines, Panelist
+        .name
+          Jon Larkowski, Panelist
+        .name
+          Bryan Liles, Panelist
+        .name
+          Chad Pytel, Panelist
+        .name
+          Steven Bristol, Moderator
+
+    %tr
+      %td.slot 6:15 - 6:30PM
+      %td.plenary{ colspan: '2' }
+        End of day announcements
+        .name
+          Jim Remsik &amp; Robert Pitts
+
+    %tr
+      %td.slot 6:30 - 8:00PM
+      %td{ colspan: '2' }
+        Dinner - Self Organized
+
+    %tr
+      %td.slot
+        8:00 - 11:00PM
+        %br/
+        (Venue Curfew)
+      %td.talk{ colspan: '2' }
+        Conference After Party - MMoCA Rooftop Sculpture Garden
+        %ul
+          %li.name
+            Giles Bowkett
+          %li.name
+            = link_to "Dosh (a.k.a. Martin Dosh)", 'http://en.wikipedia.org/wiki/Dosh'
+          %li.name
+            Rob Sanheim
+
+= render :partial => 'sponsors'

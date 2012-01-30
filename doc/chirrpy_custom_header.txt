@@ -335,7 +335,7 @@ header + #content {
           </ul>
         </nav>
         <p>
-          <mark data-after_content='$'>August 18-20, 2011</mark>
+          <mark data-after_content='$'>August 23-25, 2012</mark>
           Madison, WI
         </p>
       </section>
