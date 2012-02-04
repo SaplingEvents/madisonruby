@@ -4,6 +4,7 @@ MadisonRuby::Application.routes.draw do
     match '/*path', :to => redirect {|params| "http://madisonruby.org/#{params[:path]}"}
   end
 
+  match 'cfp' => "pages#call_for_proposals", :as => "cfp"
   match 'home' => "pages#home", :as => "home"
   match 'schedule' => "pages#schedule", :as => "schedule"
   match 'speakers' => "pages#speakers", :as => "speakers"
