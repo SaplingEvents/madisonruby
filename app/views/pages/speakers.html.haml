@@ -1,10 +1,7 @@
 - content_for :page_title do
   Speakers - Join The Conversation - August 23-25, 2012 - Madison, WI
 
-%h2.call_for_proposals
-  The
-  = link_to "Call for Proposals", cfp_path
-  is open until April 1st, 2012
+= render :partial => 'call_for_proposals'
 
 %section#speakers
   %h1 Our Speakers
