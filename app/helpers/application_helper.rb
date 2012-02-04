@@ -6,6 +6,6 @@ module ApplicationHelper
     ["img_homepage-robert_pitts.jpg", "Robert Pitts", "/speakers#robert_pitts"]]
 
   def random_speakers(limit=10)
-    HOMEPAGE_SPEAKERS.shuffle[1..limit]
+    HOMEPAGE_SPEAKERS.shuffle[0..limit]
   end
 end
