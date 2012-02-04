@@ -26,7 +26,7 @@
             %li= link_to "Schedule", schedule_path
             %li= link_to "Sponsors", sponsors_path
             %li= link_to "Travel", travel_path
-            %li.register= link_to "Register", "http://sapling.wufoo.com/forms/madison-ruby-2012-registration-form/"
+            %li.register= link_to "Register", register_path
         %p
           %mark(data-after_content="$") Workshops - August 23, 2012
           %mark(data-after_content="$") Conference - August 24-25, 2012
@@ -38,9 +38,8 @@
           Discover a hidden
           %strong gem
           in Madison, Wisconsin
-        = link_to "http://sapling.wufoo.com/forms/madison-ruby-2012-registration-form/" do
+        = link_to register_path do
           %span Register Now
-        -# %p.price $350
     #content
       = yield
 

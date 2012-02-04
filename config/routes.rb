@@ -6,6 +6,7 @@ MadisonRuby::Application.routes.draw do
 
   match 'cfp' => "pages#call_for_proposals", :as => "cfp"
   match 'home' => "pages#home", :as => "home"
+  match 'register' => "pages#register", :as => "register"
   match 'schedule' => "pages#schedule", :as => "schedule"
   match 'speakers' => "pages#speakers", :as => "speakers"
   match 'sponsors' => "pages#sponsors", :as => "sponsors"
