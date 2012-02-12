@@ -3,8 +3,26 @@
 
 = render :partial => 'call_for_proposals'
 
+
 %section#speakers
   %h1 Our Speakers
+  %article
+    %a{ :name => 'clyde_stubblefield' }
+    %figure
+      = image_tag "img_clyde_stubblefield.jpg", alt: "Clyde Stubblefield"
+    .bio
+      %hgroup
+        %h1 Clyde Stubblefield
+      %p Clyde Stubblefield (born April 18, 1943 in Chattanooga, Tennessee) is a drummer best known for his work with James Brown.
+      %p Stubblefield's recordings with James Brown are considered to be some of the standard-bearers for funk drumming, including the singles "Cold Sweat", "There Was A Time", "I Got The Feelin'", "Say It Loud - I'm Black and I'm Proud", "Ain't It Funky Now", "Mother Popcorn", and the album Sex Machine.
+      %p His groove on James Brown's "Funky Drummer" is believed to be the world's most sampled record. Stubblefield was featured in a PBS Independent Lens documentary, Copyright Criminals which aired January 19, 2010.
+
+
+    %aside
+      %dl
+        %dt.website Website:
+        %dd= link_to "http://en.wikipedia.org/wiki/Clyde_Stubblefield", "Clyde Stubblefield (Wikipedia)"
+
   %article
     %a{ :name => 'jeff_casimir' }
     %figure
