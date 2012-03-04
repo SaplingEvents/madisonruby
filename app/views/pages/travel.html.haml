@@ -2,45 +2,6 @@
   Hotel and Travel Information for Madison Ruby - August 23-25, 2012
 
 %section#travel
-  -# %h1 Travel
-  -# %h2 Bus
-  -# = link_to "Van Galder http://www.coachusa.com/vangalder/
-
-  -# For those of you in Chicago Downtown or O'Hare Airport Van Galder coach bus fares to Madison (Memorial Union) are $29 one way and $58 round trip. You make find a better airline pricing by flying into Chicago, and save a few bucks by taking the bus to Madison.
-
-  %h1 Hotels
-  %a{ :name => 'inn_on_the_park' }
-  %article
-    %aside
-      %dl
-        %dt.company Address:
-        %dd= link_to "22 S Carroll Street, Madison, WI", "http://maps.google.com/maps/place?cid=17697481338706337607&q=inn+on+the+park,+madison,+wi&hl=en&sll=43.073162,-89.384665&sspn=0.006295,0.036443&ie=UTF8&ll=43.085502,-89.412575&spn=0,0&t=h&z=15"
-        %dt.website Website:
-        %dd= link_to "Inn On The Park", "http://www.innonthepark.net/?utm_source=madisonruby.org&utm_medium=third_party&utm_campaign=convention"
-
-      %h1 Rate Card
-
-      %dl
-        %dt One Bed
-        %dd $119
-        %dt Two Beds
-        %dd $129
-        %dt Suites
-        %dd $159
-    .bio
-      %hgroup
-        %h1 Best Western Inn On The Park
-
-      %p
-        A main selling point of the Inn On The Park is location. The rooms are a little dated but, man it's convenient and you shouldn't be spending much time here anyway, right?
-        = link_to "@l4rk (Jon Larkowski)", "http://twitter.com/l4rk"
-        can give personal advice about this hotel as he has stayed here a number of times.
-
-
-      = link_to_image "inn-on-the-park-exterior-thumb.jpg:inn-on-the-park-exterior-large.jpg", :title => "Best Western Inn On The Park Exterior", :class => 'fancy'
-      = link_to_image "inn-on-the-park-suite-thumb.jpg:inn-on-the-park-suite-large.jpg", :title => "Best Western Inn On The Park Suite", :class => 'fancy'
-      .more_details
-        = link_to 'More details', inn_on_the_park_path
 
   %a{ :name => 'sheraton' }
   %article
@@ -55,9 +16,9 @@
 
       %dl
         %dt One Bed
-        %dd $129
+        %dd $99
         %dt Two Beds
-        %dd $129
+        %dd $99
     .bio
       %hgroup
         %h1 Sheraton Madison
@@ -66,13 +27,15 @@
         This Madison landmark has recently renovated to the tune of $5M and has a number of things going for it despite being a little further away from the action.
 
       %ul
+        %li Full Hot Breakfast included
+        %li Free wired and wireless internet access in each room
         %li Shuttle anywhere within three miles of the Sheraton. (This would easily get you to the conference venue)
         %li Ample parking and easy on/off access to the interstate system
         %li Bike/Running path around the lake edge (This would also get you to the conference venue)
-        %li Free wired and wireless internet access in each room
         %li 32" Flat screen televisions in each room
         %li Travel Green Wisconsin Certified Hotel
         %li Starbucks coffee bar in the lobby
+        %li Rate available until August 1, 2012
 
       = link_to_image "sheraton-exterior-thumb.jpg:sheraton-exterior-large.jpg", :title => "Sheraton Madison Exterior", :class => 'fancy'
       = link_to_image "sheraton-room-thumb.jpg:sheraton-room-large.jpg", :title => "Sheraton Madison Room", :class => 'fancy'
@@ -81,63 +44,6 @@
       = link_to_image "sheraton-pool-thumb.jpg:sheraton-pool-large.jpg", :title => "Sheraton Madison Pool", :class => 'fancy'
       .more_details
         = link_to 'More details', sheraton_path
-
-  %a{ :name => 'doubletree' }
-  %article
-    %aside
-      %dl
-        %dt.company Address:
-        %dd= link_to "525 West Johnson Street, Madison, WI", "http://maps.google.com/maps/place?cid=13396986163372906686&q=DoubleTree+by+Hilton+Hotel+Madison,+525+W.+Johnson+St.,+Madison,+WI+53703&hl=en&sll=43.071694,-89.394593&sspn=0.006295,0.006295&ie=UTF8&ll=43.077869,-89.408541&spn=0,0&t=h&z=16"
-        %dt.website Website:
-        %dd= link_to "Doubletree Madison", "http://www.doubletree.com/"
-
-      %h1 Rate Card
-
-      %dl
-        %dt One Bed
-        %dd $159
-        %dt Two Beds
-        %dd $159
-    .bio
-      %hgroup
-        %h1 Doubletree Madison
-
-      %p
-        The Doubletree is in the thick of college life on an arterial traffic way called West Johnson. Stumbling distance from both the conference venue and world famous State Street this is a reasonable location to lay your head.
-
-      = link_to_image "doubletree-exterior-thumb.jpg:doubletree-exterior-large.jpg", :title => "Doubletree Exterior", :class => 'fancy'
-      = link_to_image "doubletree-room-thumb.jpg:doubletree-room-large.jpg", :title => "Doubletree Room", :class => 'fancy'
-      = link_to_image "doubletree-capitol-view-thumb.jpg:doubletree-capitol-view-large.jpg", :title => "Doubletree Capitol View", :class => 'fancy'
-      .more_details
-        = link_to 'More details', doubletree_path
-
-  %a{ :name => 'hyatt_place' }
-  %article
-    %aside
-      %dl
-        %dt.company Address:
-        %dd= link_to "333 West Washington Avenue, Madison, WI", "http://maps.google.com/maps/place?cid=10659967246771054750&q=Hyatt+Place+Madison%2FDowntown,+West+Washington+Avenue,+Madison,+WI&hl=en&sll=43.071692,-89.387613&sspn=0.006295,0.010872&ie=UTF8&ll=43.077681,-89.401567&spn=0,0&t=h&z=16"
-        %dt.website Website:
-        %dd= link_to "Hyatt Place Madison", "http://madisondowntown.place.hyatt.com/hyatt/hotels/place/index.jsp?src=agn_dtc_hp_lclb_gplaces_msnzd"
-
-      %h1 Rate Card
-
-      %dl
-        %dt One Bed
-        %dd $119
-        %dt Two Beds
-        %dd $119
-    .bio
-      %hgroup
-        %h1 Hyatt Place Madison
-
-      %p
-        Hyatt Place Madison is brand new and located a few blocks away from the venue. The most modern hotel in the downtwon Madison area they offer complimentary wifi in all rooms.
-
-      = link_to_image "hyatt-capitol-view-thumb.jpg:hyatt-capitol-view-large.jpg", :title => "Hyatt Place Exterior", :class => 'fancy'
-      = link_to_image "hyatt-great-room-thumb.jpg:hyatt-great-room-large.jpg", :title => "Hyatt Place Great Room", :class => 'fancy'
-      .more_details
-        = link_to 'More details', hyatt_place_path
 
   %a{ :name => 'madison_hostel' }
   %article
