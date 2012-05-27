@@ -1,0 +1,15 @@
+%article
+  %a{ :name => "#{speaker.anchor}" }
+  %figure
+    = image_tag "img_#{speaker.anchor}.jpg", alt: "#{speaker.name}"
+  .bio
+    %hgroup
+      %h1= speaker.name
+    %p= speaker.bio
+
+  %aside
+    %dl
+      - if speaker.has_website?
+        %dt.website Website:
+        %dd= link_to "#{speaker.website_name}", "#{speaker.website_url}"
+
