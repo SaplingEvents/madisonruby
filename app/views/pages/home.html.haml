@@ -15,7 +15,7 @@
 
     %ul
       - Speaker.limit(10).shuffle.each do |speaker|
-        %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path("##{speaker.anchor}")
+        %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path(anchor: speaker.anchor)
 
 %section#workshops
   %h1 Our Workshops
