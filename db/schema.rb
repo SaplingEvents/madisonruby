@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120527195904) do
+ActiveRecord::Schema.define(:version => 20120607181905) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -52,8 +52,6 @@ ActiveRecord::Schema.define(:version => 20120527195904) do
     t.string   "twitter"
     t.string   "website_name"
     t.string   "website_url"
-    t.string   "image"
-    t.string   "homepage_image"
     t.text     "bio"
     t.datetime "created_at"
     t.datetime "updated_at"
