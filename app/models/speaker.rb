@@ -7,6 +7,10 @@ class Speaker < ActiveRecord::Base
     "/images/img_homepage-#{anchor}.jpg"
   end
 
+  def image_path
+    "/images/img_#{anchor}.jpg"
+  end
+
   def has_website?
     website_url.present?
   end
