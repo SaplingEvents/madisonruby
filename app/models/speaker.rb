@@ -3,6 +3,10 @@ class Speaker < ActiveRecord::Base
     name.underscore.gsub(' ', '_')
   end
 
+  def homepage_image_path
+    "/images/img_homepage-#{anchor}.jpg"
+  end
+
   def has_website?
     website_url.present?
   end

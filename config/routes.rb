@@ -1,4 +1,8 @@
 MadisonRuby::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   constraints(:host => /madisonruby.com/) do
     root :to => redirect("http://madisonruby.org")
     match '/*path', :to => redirect {|params| "http://madisonruby.org/#{params[:path]}"}
