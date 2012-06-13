@@ -6,4 +6,7 @@ class PagesController < ApplicationController
   def speakers
   end
 
+  def sponsors
+    @sponsors = Sponsor.all.sort_by {|s| s.ranking }
+  end
 end
