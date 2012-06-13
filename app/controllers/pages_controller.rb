@@ -12,6 +12,6 @@ class PagesController < ApplicationController
   end
 private
   def load_footer_sponsors
-    @footer_sponsors = Sponsor.all.chunk {|s| s.ranking }
+    @footer_sponsors = Sponsor.all.sort_by {|s| s.ranking }.chunk {|s| s.ranking }
   end
 end
