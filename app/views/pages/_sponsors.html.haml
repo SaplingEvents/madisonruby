@@ -1,7 +1,7 @@
 %section#sponsors
   %h1 Sponsors
   %ul
-    - @sponsors.each do |level, sponsors|
+    - @footer_sponsors.each do |level, sponsors|
       %li
         .level
           = render :partial => 'sponsor_logo', :collection => sponsors, :as => :sponsor
