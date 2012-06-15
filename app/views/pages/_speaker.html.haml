@@ -1,7 +1,7 @@
 %article
   %a{ :name => "#{speaker.anchor}" }
   %figure
-    = image_tag "img_#{speaker.anchor}.jpg", alt: "#{speaker.name}"
+    = image_tag speaker.homepage_image_path, alt: "#{speaker.name}" if speaker.homepage_image_path.present?
   .bio
     %hgroup
       %h1= speaker.name

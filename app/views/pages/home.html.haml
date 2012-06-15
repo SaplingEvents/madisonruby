@@ -14,9 +14,8 @@
       = link_to "View All ▸", speakers_path, class: "more"
 
     %ul
-      - Speaker.limit(10).shuffle.each do |speaker|
-        - if image_exists?(speaker, true)
-          %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path(anchor: speaker.anchor)
+      - @speakers.each do |speaker|
+        %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path(anchor: speaker.anchor)
 
 %section#workshops
   %h1 Our Workshops
