@@ -1,0 +1,18 @@
+%a{ :name => sponsor.name.downcase }
+%article
+  %aside
+    %dl
+      %dt.company Company:
+      %dd= link_to sponsor.name, sponsor.url
+      - if sponsor.twitter_handle.present?
+        %dt.twitter Twitter:
+        %dd= link_to "@#{sponsor.twitter_handle}", "http://twitter.com/#{sponsor.twitter_handle}"
+      %dt.website Website:
+      %dd= link_to sponsor.url, sponsor.url
+
+  = image_tag sponsor.image_path, alt: sponsor.name
+  .bio
+    %hgroup
+      %h1= sponsor.name
+
+    %p= sponsor.description.html_safe if sponsor.description

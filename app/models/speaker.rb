@@ -1,10 +1,10 @@
 class Speaker < ActiveRecord::Base
   def anchor
-    name.underscore.gsub(' ', '_')
+    name.underscore.gsub(' ', '_') if self.name
   end
 
-  def homepage_image_path
-    "/images/img_homepage-#{anchor}.jpg"
+  def image_path
+    self.regular_image_path
   end
 
   def image_path
