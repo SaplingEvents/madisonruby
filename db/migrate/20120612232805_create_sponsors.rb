@@ -1,5 +1,6 @@
 class CreateSponsors < ActiveRecord::Migration
   def self.up
+    drop_table :sponsors
     create_table :sponsors do |t|
       t.string :name
       t.text :description
