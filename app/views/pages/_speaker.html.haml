@@ -9,7 +9,13 @@
 
   %aside
     %dl
+      - if speaker.twitter
+        %dt.twitter Twitter:
+        %dd= link_to "http://twitter.com/#{speaker.twitter}", "@#{speaker.twitter}"
       - if speaker.has_website?
         %dt.website Website:
         %dd= link_to "#{speaker.website_name}", "#{speaker.website_url}"
+      - if speaker.company_name.nil? && speaker.company_url.nil?
+        %dt.company Company:
+        %dd= link_to_unless speaker.company_url.nil?, "#{speaker.company_name}", "#{speaker.company_url}"
 
