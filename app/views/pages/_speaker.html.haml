@@ -17,5 +17,8 @@
         %dd= link_to "#{speaker.website_url}", "#{speaker.website_name}"
       - if speaker.company_name.present?
         %dt.company Company:
-        %dd= link_to_unless speaker.company_url.nil?, "#{speaker.company_name}", "#{speaker.company_url}"
+        - if speaker.company_url.present?
+          %dd= link_to speaker.company_name, speaker.company_url
+        - else
+          %dd= speaker.company_name
 
