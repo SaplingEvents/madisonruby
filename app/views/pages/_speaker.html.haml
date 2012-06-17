@@ -9,7 +9,7 @@
 
   %aside
     %dl
-      - if speaker.twitter
+      - if speaker.twitter.present?
         %dt.twitter Twitter:
         %dd= link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
       - if speaker.has_website?
