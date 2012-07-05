@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   before_filter :load_footer_sponsors
 
   def home
-    @speakers = Speaker.where(Speaker.arel_table[:homepage_image_path].not_eq('')).where(Speaker.arel_table[:homepage_image_path].not_eq(nil)).limit(10).shuffle
+    @speakers = Speaker.where(Speaker.arel_table[:homepage_image_path].not_eq('')).where(Speaker.arel_table[:homepage_image_path].not_eq(nil)).shuffle[0..9]
   end
 
   def speakers
