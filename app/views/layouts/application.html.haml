@@ -49,6 +49,8 @@
       %p
         != "Copyright &copy; 2011-2012 Madison Ruby Conference &mdash; "
         = mail_to "contact@madisonruby.org"
+        != "&mdash; "
+        = link_to "Policies", policies_path
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
