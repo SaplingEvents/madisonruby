@@ -11,6 +11,7 @@ MadisonRuby::Application.routes.draw do
   match 'apply_to_be_a_sponsor' => "pages#apply_to_be_a_sponsor", :as => "apply_to_be_a_sponsor"
   match 'cfp' => "pages#call_for_proposals", :as => "cfp"
   match 'home' => "pages#home", :as => "home"
+  match 'policies' => "pages#policies", :as => "policies"
   match 'register' => "pages#register", :as => "register"
   match 'schedule' => "pages#schedule", :as => "schedule"
   match 'speakers' => "pages#speakers", :as => "speakers"
