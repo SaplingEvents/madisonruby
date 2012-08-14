@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://madisonruby.org/</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/speakers</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/schedule</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/sponsors</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/travel</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/register</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/policies</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/apply_to_be_a_sponsor</loc>
+</url>
+<url>
+  <loc>http://madisonruby.org/hotels/sheraton</loc>
+</url>
+</urlset>
