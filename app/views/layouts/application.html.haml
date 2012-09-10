@@ -26,7 +26,7 @@
             %li= link_to "Schedule", schedule_path
             %li= link_to "Sponsors", sponsors_path
             %li= link_to "Travel", travel_path
-            %li.register= link_to "Register", register_path
+            %li.register= link_to "Register", "http://2013.madisonruby.org"
         %p
           %mark(data-after_content="$") Workshops - August 23, 2012
           %mark(data-after_content="$") Conference - August 24-25, 2012
@@ -40,7 +40,7 @@
           Discover a hidden
           %strong gem
           in Madison, Wisconsin
-        = link_to register_path do
+        = link_to "http://2013.madisonruby.org" do
           %span Register Now
     #content
       = yield
