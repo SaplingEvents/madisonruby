@@ -1,5 +1,5 @@
 - content_for :page_title do
-  Madison Ruby Conference - Aug 23-25, 2012 - Madison, WI
+  Madison Ruby Conference - Aug 22-24, 2013 - Madison, WI
 
 - content_for :head do
   = render :partial => 'get_satisfaction'
@@ -11,9 +11,9 @@
   %article.speakers
     %header
       %h1 Our Speakers
-      = link_to "View All ▸", speakers_path, class: "more"
+      -# = link_to "View All ▸", speakers_path, class: "more"
 
-    %ul
+    -# %ul
       - @speakers.each do |speaker|
         %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path(anchor: speaker.anchor)
 
@@ -21,14 +21,14 @@
   %h1 Our Workshops
   %p Need to brush up on Ruby or related technologies? Get a jumpstart just before the conference with world-class workshops by leaders in the community. These one day classes will give you to tools and connections you need to get started or get to the next level. Classes will run from 9:00 AM to 5:30 PM and lunch will be provided.
 
-  %article
+  -# %article
     = image_tag "logo_github.png", alt: "GitHub: Advanced Git"
     %h1 Advanced Git with Matthew McCullough
     %p This full day Git workshop takes you beyond the basic edit, add, and commit workflow to deep Git features that benefit developers appreciative of what Git's flexible DVCS model brings to hard-core software development. You'll learn how to harvest and inspect commit-specific merges, leverage interactive rebase, and search through history with precision and speed. Tags, GPG signatures, and other cryptographic integrity features will become clear, and pushing and pulling will be controlled with newfound precision.
 
     %p This workshop requires attendees to have basic to intermediate level familiarity with Git.
 
-  %article
+  -# %article
     = image_tag "logo_railsbridge.png", alt: "RailsBridge"
     %h1 RailsBridge Womens Outreach Workshop
     %p The target audience is anyone who has a laptop computer and is willing to devote a Wednesday evening and full day on Thursday to learning how to develop a web application using the popular Ruby on Rails framework.
@@ -42,7 +42,7 @@
 
     %p= link_to "Join Mad-Railers to Register", "http://www.meetup.com/Mad-Railers/", :class => "join-mad-railers"
 
-  %article
+  -# %article
     = image_tag "logo_jumpstart_lab.png", alt: "Ruby Jumpstart"
     %h1 Introduction to Ruby with Jeff Casimir
 
@@ -50,7 +50,7 @@
 
     %p We'll work on an "Extract-Translate-Load" (ETL) project, starting with a file full of spreadsheet data, manipulating individual elements, generating form letters, and looking up Congressional district data via a web-based API.
 
-  %article
+  -# %article
     = image_tag "logo_wynn_adam.png", alt: "Wynn Netherland & Adam Stacoviak"
     %h1 Design Eye for The Dev Guy or Gal
     %ul
