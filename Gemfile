@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.19'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml-rails'
 gem 'activeadmin'
