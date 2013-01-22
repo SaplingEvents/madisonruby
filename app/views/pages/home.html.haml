@@ -11,9 +11,9 @@
   %article.speakers
     %header
       %h1 Our Speakers
-      -# = link_to "View All ▸", speakers_path, class: "more"
+      = link_to "View All ▸", speakers_path, class: "more"
 
-    -# %ul
+    %ul
       - @speakers.each do |speaker|
         %li= link_to image_tag("#{speaker.homepage_image_path}", alt: speaker.name), speakers_path(anchor: speaker.anchor)
 
