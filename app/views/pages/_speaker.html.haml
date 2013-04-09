@@ -14,7 +14,7 @@
         %dd= link_to "@#{speaker.twitter}", "http://twitter.com/#{speaker.twitter}"
       - if speaker.has_website?
         %dt.website Website:
-        %dd= link_to "#{speaker.website_url}", "#{speaker.website_name}"
+        %dd= link_to speaker.website_name, speaker.website_url
       - if speaker.company_name.present?
         %dt.company Company:
         - if speaker.company_url.present?
