@@ -3,47 +3,28 @@
 
 %section#travel
 
-  %a{ :name => 'sheraton' }
+  %a{ :name => 'doubletree' }
   %article
     %aside
       %dl
         %dt.company Address:
-        %dd= link_to "706 John Nolen Dr # 1, Madison, WI 53713-1422", "http://maps.google.com/maps/place?cid=3745741678620690327&q=sheraton+hotel,+madison,+wi&hl=en&sll=43.047265,-89.373579&sspn=0.056731,0.060833&ie=UTF8&ll=43.096721,-89.485188&spn=0,0&t=h&z=13"
+        %dd= link_to "525 West Johnson Street, Madison, WI 53703", "http://goo.gl/maps/eb61O"
         %dt.website Website:
-        %dd= link_to "Sheraton Madison", "https://www.starwoodmeeting.com/Book/MadisonRuby2012"
+        %dd= link_to "Doubletree Booking", "http://doubletree.hilton.com/en/dt/groups/personalized/M/MSNDTDT-MRB-20130821/index.jhtml?WT.mc_id=POG"
+        %dt.phone Direct Number:
+        %dd 608-251-5511
+        %dt.phone Toll Free Reservation Number:
+        %dd 800-222-TREE
 
-      %h1 Rate Card
-
-      %dl
-        %dt One Bed
-        %dd $99
-        %dt Two Beds
-        %dd $99
     .bio
       %hgroup
-        %h1 Sheraton Madison
+        %h1 DoubleTree by Hilton Hotel Madison
 
       %p
-        This Madison landmark has recently renovated to the tune of $5M and has a number of things going for it despite being a little further away from the action.
+        Right in the heart of downtown Madison, DoubleTree by Hilton Hotel Madison is close to the eastern edge of the University of Wisconsin-Madison campus, nestled between Lake Monona and Lake Mendota.
 
-      %ul
-        %li Full Hot Breakfast included
-        %li Free wired and wireless internet access in each room
-        %li Shuttle anywhere within three miles of the Sheraton. (This would easily get you to the conference venue)
-        %li Ample parking and easy on/off access to the interstate system
-        %li Bike/Running path around the lake edge (This would also get you to the conference venue)
-        %li 32" Flat screen televisions in each room
-        %li Travel Green Wisconsin Certified Hotel
-        %li Starbucks coffee bar in the lobby
-        %li Rate available until August 1, 2012
-
-      = link_to_image "sheraton-exterior-thumb.jpg:sheraton-exterior-large.jpg", :title => "Sheraton Madison Exterior", :class => 'fancy'
-      = link_to_image "sheraton-room-thumb.jpg:sheraton-room-large.jpg", :title => "Sheraton Madison Room", :class => 'fancy'
-      = link_to_image "sheraton-bar-thumb.jpg:sheraton-bar-large.jpg", :title => "Sheraton Madison Bar", :class => 'fancy'
-      = link_to_image "sheraton-fitness-thumb.jpg:sheraton-fitness-large.jpg", :title => "Sheraton Madison Fitness Center", :class => 'fancy'
-      = link_to_image "sheraton-pool-thumb.jpg:sheraton-pool-large.jpg", :title => "Sheraton Madison Pool", :class => 'fancy'
       .more_details
-        = link_to 'More details', sheraton_path
+        = link_to 'More details', doubletree_path
 
   %a{ :name => 'madison_hostel' }
   %article
